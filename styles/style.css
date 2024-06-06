@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+}
+h1,
+nav ul li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+}
+h1 {
+  padding-top: 2rem;
+  text-align: center;
+  color: #fff;
+}
+.head-div {
+  display: flex;
+}
+.avatar {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.avatar:hover {
+  scale: 1.1;
+}
+header {
+  background-color: #07550e;
+  justify-content: space-evenly;
+}
+
+nav {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+button {
+  background: none;
+  border: none;
+}
+/* Small View Navigation */
+#menu {
+  font-size: 2rem;
+  border: 0;
+  background: none;
+  color: #ffffff;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❎";
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation a:hover {
+  background-color: #bbb;
+  color: #333;
+  font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+  display: block;
+}
+
+.active::before {
+  content: "📍";
+  /* just a wayfinding symbol for the user */
+}
+main {
+  display: grid;
+}
+.course-work {
+  background-color: #ffffff;
+  padding: 0 1rem;
+  margin: 1rem;
+  border-radius: 15px;
+}
+.head-top {
+  padding: 1.25rem;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+  background-color: #07550e;
+}
+.head-top:first-child {
+  margin-bottom: 10px;
+}
+.country {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 1.5rem;
+  text-align: center;
+  border-radius: 15px;
+}
+.flag-box {
+  margin: 1rem;
+}
+.lagos {
+  width: 300px;
+}
+section {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.courses {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: 1.5rem;
+  text-align: center;
+  border-radius: 15px;
+}
+.course-box {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1rem;
+}
+.course-box button {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  background-color: #07550e;
+}
+hr {
+  height: 3px;
+  background: black;
+}
+.course-con {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+/* .course {
+  display: none;
+} */
+.course.CSE,
+.course.WDD {
+  background-color: #07550e;
+  border: 1px solid black;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.course.WDD:last-child {
+  background-color: #aa1b1b;
+}
+.course-box-completed {
+  background-color: #07550e;
+  padding: 1rem;
+  font-weight: 800;
+  color: #fff;
+  border-radius: 15px;
+  margin: 0.5rem;
+}
+.course-box-incomplete {
+  background-color: #aa1b1b;
+  padding: 1rem;
+  font-weight: 800;
+  color: #fff;
+  border-radius: 15px;
+  margin: 0.5rem;
+}
+.total-credits {
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+}
+/* JS CLASSES start*/
+.course-card-completed {
+  background-color: #07550e;
+  text-transform: capitalize;
+  border: 1px solid black;
+  color: #fff;
+  padding: 2rem;
+}
+.course-card {
+  background-color: #878f87;
+  text-transform: capitalize;
+  border: 1px solid black;
+  color: #000000;
+  padding: 20px;
+}
+.course-list {
+  display: flex;
+  flex-direction: column;
+}
+/* JS CLASSES END */
+footer {
+  padding: 2rem;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #07550e;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+footer p {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 38.5em) {
+  header {
+    text-align: center;
+  }
+  .head-div {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header h1 {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  #menu {
+    display: none;
+    /* hide hamburger button */
+  }
+
+  nav {
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 1rem;
+  }
+  .navigation a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 10px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.5rem;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
+  }
+  section {
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: #252424 3px 5px 5px;
+  }
+
+  .course-work {
+    background-color: #ffffff;
+    grid-column: 1 / 3;
+    padding: 1rem 2rem;
+    overflow: hidden;
+    box-shadow: #252424 3px 5px 5px;
+    width: 100%;
+  }
+
+  .counrty {
+    box-shadow: #252424 3px 5px 5px;
+    grid-column: 3 / 4;
+    padding: 0 2rem;
+    background-color: #ffffff;
+  }
+  .courses {
+    grid-column: 1 / 4;
+  }
+  .course-con {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .course {
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
