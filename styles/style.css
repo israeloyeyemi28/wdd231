@@ -31,6 +31,7 @@ h1 {
 header {
   background-color: #07550e;
   justify-content: space-evenly;
+  width:100%;
 }
 
 nav {
