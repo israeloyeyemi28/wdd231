@@ -6,7 +6,7 @@ year.textContent = currentYear;
 const LastModifiedDate = new Date(document.lastModified);
 const options = {
   year: "numeric",
-  month: "long",
+  month: "short",
   day: "numeric",
   hour: "numeric",
   minute: "numeric",
@@ -89,13 +89,9 @@ const courses = [
     completed: false,
   },
 ];
-
-//Functions
-generateCourseCards(courses);
-calculateTotalCredits();
-// filterCourses("all");
-
-function generateCourseCards(course) {
+createCards(courses);
+calcCredits();
+function createCards(course) {
   const courseList = document.querySelector(".course-list");
   courseList.innerHTML = "";
   courses.forEach((course) => {
@@ -111,25 +107,21 @@ function generateCourseCards(course) {
     <p>Credits: ${course.credits}</p>
     <p>Technology: ${course.technology.join(", ")}</p>
     <span>Completed: ${course.completed}</span>
-    <h3>Description: ${course.description}</h3>
     `;
 
     courseList.appendChild(card);
   });
 }
 // calculate the total credits
-function calculateTotalCredits() {
+function calcsCredits() {
   const totalCredits = courses.reduce((acc, course) => acc + course.credits, 0);
   document.getElementById("total-credits-value").innerText = totalCredits;
 }
-
-//for course- box
 const courseBox = document.querySelector(".course");
 courseBox.setAttribute(
   "class",
   course.completed ? "course-box-completed" : "course-box-incomplete"
 );
-
 function filterCourses(subject) {
   let courseBox = document.querySelectorAll(".course");
   courseBox.forEach((course) => {
