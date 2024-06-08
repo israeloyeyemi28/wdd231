@@ -113,7 +113,7 @@ function createCards(course) {
   });
 }
 // calculate the total credits
-function calcsCredits() {
+function calcCredits() {
   const totalCredits = courses.reduce((acc, course) => acc + course.credits, 0);
   document.getElementById("total-credits-value").innerText = totalCredits;
 }
