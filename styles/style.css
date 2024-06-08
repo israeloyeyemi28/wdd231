@@ -28,7 +28,6 @@ h1 {
 header {
   background-color: #07550e;
   justify-content: space-evenly;
-  width: 100%;
 }
 nav {
   background-color: #000000;
@@ -210,6 +209,7 @@ footer {
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   color: #fff;
+  width:100%;
 }
 footer p {
   margin: 0 auto;
