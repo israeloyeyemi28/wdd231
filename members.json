@@ -1,0 +1,28 @@
+{
+  "family_name": "Oyeyemi",
+  "move_in_date": "2020-05-10",
+  "number_of_people": 3,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "name": "Israel Oyeyemi",
+      "gender": "Male",
+      "birthdate": "2019-05-15"
+    },
+    {
+      "name": "micheal Oyeyemi",
+      "gender": "Male",
+      "birthdate": "2012-08-20"
+    },
+    {
+      "name": "Favour Oyeyemi",
+      "gender": "Female",
+      "birthdate": "2016-03-05"
+    },
+    {
+      "name": "Anna Oyeyemi",
+      "gender": "female",
+      "birthdate": "2007-01-10"
+    }
+  ]
+}
