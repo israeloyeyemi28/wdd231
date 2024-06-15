@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  background-color: #849dad;
+}
+header {
+  padding: 1rem;
+  background-color: #5d686e;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+button {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+  background-color: blue;
+  color: white;
+  margin: 0.1rem;
+  border-radius: 10px;
+  border: none;
+}
+nav {
+  display: flex;
+  padding: 0.75rem;
+  justify-content: space-between;
+  background-color: green;
+}
+h1 {
+  text-align: center;
+}
+
+h1 {
+  border-bottom: 1px solid #000;
+  padding: 5px;
+}
+
+#cards {
+  display: grid;
+  grid-gap: 3rem;
+  max-width: 100%;
+  margin: 1rem;
+}
+
+section {
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #03058b;
+  border-radius: 10px;
+  color: #fff;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+section img {
+  width: 240px;
+  height: auto;
+  border: 1px solid #fff;
+  box-shadow: 0 0 15px #fff;
+  margin-top: 1rem;
+}
+
+.active {
+  color: #fff;
+  background-color: #000;
+}
+
+button:hover {
+  background-color: #225999;
+  color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 37.5em) {
+  main #cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 100%;
+  }
+  button {
+    font-size: 1.95rem;
+    padding: 2rem;
+  }
+}
