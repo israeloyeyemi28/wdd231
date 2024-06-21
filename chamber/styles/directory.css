@@ -19,6 +19,15 @@ body {
   padding: 1rem;
   padding-top: 1rem;
   margin: 0;
+  color: blue;
+}
+#boost{
+  color: green;
+}
+#boost::after{
+  content: "\1F680";
+  font-size: 1.5rem;
+
 }
 
 h2 {
@@ -370,9 +379,8 @@ footer p {
     color: #000272;
     text-decoration: underline;
     border-radius: 10px;
-    font-size: 1.15rem;
     font-weight: bolder;
-    padding-bottom: 20px;
+    padding-bottom: 20px; 
   }
   .footer-con {
     display: grid;
