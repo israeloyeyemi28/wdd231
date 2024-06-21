@@ -1,0 +1,81 @@
+{
+    "members": [
+        {
+        "company" : "Microsoft Corporation",
+        "name" : "Bill Gates Jnr",
+        "address" : "One Microsoft Way, Redmond, WA 98094",
+        "phone" : "345-542-085-3432",
+        "website": "www.microsoft.com",
+        "image" : "./images/testimonial-2.jpg",
+        "membershipLevel" : "gold",
+        "industry" : "Technology",
+        "description" : "A leading company In Tech Industry"
+    },
+    {
+        "company" : "Coca-Cola company",
+        "name" : "Micheal Oliver",
+        "address" : "One Coca-Cola Plaza, Atalanta, Ga 130764",
+        "phone" : "565-542-833-3434",
+        "website": "www.cocacola.com",
+        "image" : "./images/testimonial-3.jpg",
+        "membershipLevel" : "silver",
+        "industry" : "Beverages",
+        "description" : "A leading company In Beverage Industry"
+    },
+    {
+        "company" : "McDonalds' Cooporation",
+        "name" : "Joshua Wilson",
+        "address" : "110N. Carpenter St, Chicago, AU 220432",
+        "phone" : "212-542-000-3432",
+        "website": "www.mcdonalds.com",
+        "image" : "./images/testimonial-1.jpg",
+        "membershipLevel" : "gold",
+        "industry" : "Resturants",
+        "description" : "A leading company In Resturants Industry"
+    },
+    {
+        "company" : "Visa Inc",
+        "name" : "Jack Harrison",
+        "address" : "900, Metro Road, Redmond, WA 514144",
+        "phone" : "345-942-434-9900",
+        "website": "www.visainc.com",
+        "image" : "./images/testimonial-3.jpg",
+        "membershipLevel" : "platinum",
+        "industry" : "Finance",
+        "description" : "A leading company In Finance Sectors"
+    },
+    {
+        "company" : "Toyota Corporation",
+        "name" : "Andrew Toyota",
+        "address" : "2312 Toyota Ave, Redmond district, Cincinati N22054",
+        "phone" : "971-500-332-3004",
+        "website": "www.toyota.inc",
+        "image" : "./images/testimonial-2.jpg",
+        "membershipLevel" : "gold",
+        "industry" : "Technology",
+        "description" : "A leading company In Automobile Industry"
+    },
+    {
+        "company" : "United Airlines Holdings",
+        "name" : "George Baxter",
+        "address" : "233 S. Wacker Dr, Chicago, Il 60606",
+        "phone" : "312-997-8007",
+        "website": "www.unitedholdings.com",
+        "image" : "./images/testimonial-1.jpg",
+        "membershipLevel" : "silver",
+        "industry" : "Aviation",
+        "description" : "A leading company In Aviation Sectors"
+    },
+    {
+        "company" : "3M company",
+        "name" : "Micah Daniel",
+        "address" : "3M Center, St. Paul MN 55144",
+        "phone" : "651-733-1110",
+        "website": "www.3m.com",
+        "image" : "./images/testimonial-3.jpg",
+        "membershipLevel" : "platinum",
+        "industry" : "Manufacturing",
+        "description" : "A Renowened company Kown For High Quality Products"
+    }
+    ]
+}

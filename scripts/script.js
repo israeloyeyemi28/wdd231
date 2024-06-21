@@ -16,7 +16,7 @@ const formattedDate = LastModifiedDate.toLocaleDateString(undefined, options);
 lastModified.textContent = `Last Updated : ${formattedDate}`;
 lastModified.style.color = "white";
 const hamButton = document.getElementById("menu");
-const nav = document.querySelector(".navigation");
+const nav = document.querySelector("#animateme");
 hamButton.addEventListener("click", function () {
   nav.classList.toggle("open");
   hamButton.classList.toggle("open");

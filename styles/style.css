@@ -42,6 +42,7 @@ button {
 #menu {
   font-size: 2rem;
   border: 0;
+  cursor: pointer;
   background: none;
   color: #ffffff;
   position: absolute;
