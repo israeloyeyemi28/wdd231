@@ -1,19 +1,19 @@
- const year = document.getElementById("year");
- const lastModified = document.getElementById("lastModified");
- const today = new Date();
- const currentYear = today.getFullYear();
- year.textContent = currentYear;
- const LastModifiedDate = new Date(document.lastModified);
- const options = {
-   year: "numeric",
-   month: "short",
-   day: "numeric",
-   hour: "numeric",
-   minute: "numeric",
-   second: "numeric",
- };
- const formattedDate = LastModifiedDate.toLocaleDateString(undefined, options);
- lastModified.innerHTML = `<h3>Last Updated : ${formattedDate}</h3>`;
+const year = document.getElementById("year");
+const lastModified = document.getElementById("lastModified");
+const today = new Date();
+const currentYear = today.getFullYear();
+year.textContent = currentYear;
+const LastModifiedDate = new Date(document.lastModified);
+const options = {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+  hour: "numeric",
+  minute: "numeric",
+  second: "numeric",
+};
+const formattedDate = LastModifiedDate.toLocaleDateString(undefined, options);
+lastModified.innerHTML = `<h4>Last Updated : ${formattedDate}</h4>`;
 const hamButton = document.getElementById("menu");
 const nav = document.querySelector("#animateme");
 hamButton.addEventListener("click", function () {
@@ -43,9 +43,10 @@ function displayMembers(members, viewType) {
     let card = document.createElement("section");
     card.classList.add("card");
     let name = document.createElement("h2");
-    name.innerHTML = `Name: ${member.name}`;
+    name.className = "name";
+    name.innerHTML = `${member.name}`;
     let company = document.createElement("h3");
-    company.innerHTML = `Company: ${member.company}`;
+    company.innerHTML = `${member.company}`;
     let image = document.createElement("img");
     image.setAttribute("src", member.image);
     image.setAttribute("alt", `Image Of ${member.name}`);
@@ -53,19 +54,22 @@ function displayMembers(members, viewType) {
     image.setAttribute("width", "340");
     image.setAttribute("height", "440");
     let phone = document.createElement("h3");
-    phone.innerHTML = `Number: ${member.phone}`;
+    phone.innerHTML = `${member.phone}`;
     let industry = document.createElement("h3");
-    industry.innerHTML = `Industry: ${member.industry}`;
+    industry.innerHTML = `${member.industry}`;
     let website = document.createElement("h4");
     website.innerHTML = `Link: <a>${member.website}</a>`;
     let description = document.createElement("h3");
-    description.innerHTML = `Description: ${member.description}`;
+    description.innerHTML = `${member.description}`;
     let address = document.createElement("h3");
-    address.innerHTML = `Address: ${member.address}`;
+    address.innerHTML = `${member.address}`;
     let MembershipLevel = document.createElement("h3");
-    MembershipLevel.innerHTML = `Level: ${member.membershipLevel}`;
+    MembershipLevel.style.textTransform = "capitalize";
+    MembershipLevel.innerHTML = `${member.membershipLevel}`;
     if (member.membershipLevel === "gold") {
       MembershipLevel.style.color = "yellow";
+    } else {
+      MembershipLevel.style.color = "silver";
     }
     card.appendChild(name);
     card.appendChild(company);

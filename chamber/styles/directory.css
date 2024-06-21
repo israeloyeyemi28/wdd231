@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html{
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,10 +14,6 @@ body {
   text-align: center;
   font-size: 16px;
 }
-
-/* p {
-  font-size: 1rem;
-} */
 #head-txt {
   font-size: 2rem;
   padding: 1rem;
@@ -53,7 +53,7 @@ h2 {
 header {
   background-color: #818488;
   padding: 1rem;
-  width: 100%;
+  width: auto;
 }
 
 .head-div {
@@ -121,6 +121,9 @@ button {
 .active::before {
   content: "📍";
 }
+button:hover {
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,.7));
+}
 
 /* Image background */
 .chamber-img {
@@ -130,6 +133,9 @@ button {
   width: 100%;
   background-image: url(../images/hero-large.webp);
   background-position: center;
+  scroll-behavior: smooth;
+  background-position: center;
+  background-size: cover;
   background-size: calc(100% + 10rem);
 }
 
@@ -174,62 +180,52 @@ main {
 }
 .grid {
  display: flex;
- flex-direction: row;
+ flex-direction: column;
   padding: 1rem;
   margin: 1rem;
-  gap: 10px;
   align-items: center;
 }
 .grid section:nth-child(even){
-  background-color: #2b46e4;
+  background-color: #252477;
 }
 .list section img{
   display: none;
 }
 .list{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 2rem;
 }
 .list section{
-  display: flex;
+  display: block;
   padding: 1rem;
   margin: 1rem;
   text-align: center;
+}
+.desc-h3{
+  display: none;
 }
 .list section h3{
   font-size: 1rem;
   font-family: 'Times New Roman', Times, serif;
 }
 .list section:nth-child(even){
-  background-color: #2b46e4;
+  background-color: #252477;
 }
-section {
-  margin: 0 auto;
-  margin-top: 1rem;
-  padding: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #03058b;
-  border-radius: 10px;
-  color: #fff;
-  width: 750%;
-  height: auto;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: center;
+.list section h3:nth-child(even){
+  display: none;
+}
+.list section.name{
+  display: none;
 }
 section h3{
-  font-size: 1.5rem;
-  padding: .75rem;
+  font-size: 1.25rem;
+  padding: .5rem;
 }
 
 
 img {
-  width: 240px;
+  width: 200px;
   height: auto;
   border-radius: 50%;
   border: 1px solid #fff;
@@ -239,14 +235,20 @@ img {
 .list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  grid-gap: 2rem;
   align-items: center;
-  margin: 1rem;
+}
+.listCards{
+  display: block;
+  margin: 10px auto;
+  background-color: #3f3838;
 }
 #cards section{
   text-align: center;
@@ -273,10 +275,12 @@ section {
   border-radius: 10px;
   color: #fff;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+  filter: drop-shadow(2px 2px 2px rgba(0,0,0,.7));
   justify-items: center;
 }
 
@@ -301,6 +305,8 @@ footer {
   padding: 2rem;
   line-height: 1.5;
   text-align: left;
+  width: auto;
+  height: auto;
   font-size: 2rem;
   background-color: #818488;
   font-family: "Roboto", sans-serif;
@@ -333,9 +339,9 @@ footer p {
     /* hide hamburger button */
   }
 
-  h2 {
+  /* h2 {
     font-size: 4rem;
-  }
+  } */
 
   h1 {
     font-size: 2rem;
