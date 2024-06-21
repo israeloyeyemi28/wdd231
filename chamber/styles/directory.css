@@ -22,14 +22,12 @@ body {
   color: blue;
 }
 #boost{
-  color: green;
+  color: #024e02;
 }
 #boost::after{
   content: "\1F680";
   font-size: 1.5rem;
-
 }
-
 h2 {
   font-size: 1.2rem;
 }
@@ -39,6 +37,7 @@ h2 {
   height: 50px;
   margin-top: 25px;
   border-radius: 10px;
+  box-shadow: none;
 }
 
 .logo:hover {
@@ -52,7 +51,7 @@ h2 {
 }
 
 header {
-  background-color: #708570;
+  background-color: #818488;
   padding: 1rem;
   width: 100%;
 }
@@ -303,7 +302,7 @@ footer {
   line-height: 1.5;
   text-align: left;
   font-size: 2rem;
-  background-color: #708570;
+  background-color: #818488;
   font-family: "Roboto", sans-serif;
   color: #000000;
 }
@@ -383,7 +382,8 @@ footer p {
     padding-bottom: 20px; 
   }
   .footer-con {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+     display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;  */
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   }
 }
