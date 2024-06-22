@@ -6,7 +6,7 @@
         "address" : "One Microsoft Way, Redmond, WA 98094",
         "phone" : "345-542-085-3432",
         "website": "www.microsoft.com",
-        "image" : "./images/testimonial-2.jpg",
+        "image" : "https://images.app.goo.gl/T1MWKTzzodigeVxZ9",
         "membershipLevel" : "gold",
         "industry" : "Technology",
         "description" : "A leading company In Tech Industry"
