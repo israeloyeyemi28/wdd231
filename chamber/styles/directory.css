@@ -26,7 +26,7 @@ body {
   color: #5353ff;
 }
 #boost{
-  color: #0a8f0a;
+  color: #12ad12;
 }
 #boost::after{
   content: "\1F680";
@@ -279,7 +279,7 @@ section img {
 section a{
   text-decoration: underline;
 }
-ul>li {
+ul li {
   list-style-type: none;
   padding: 2rem;
 }
@@ -301,12 +301,136 @@ footer {
 #icon-div {
   text-align: center;
 }
-#icon-div img {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-right: 1rem;
+/* Icons */
+a {
+  text-decoration: none;
 }
+.order a {
+  width: 100%;
+  height: 100%;
+  font-size: 1.5em;
+  background: transparent;
+  color: var(--clr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  animation: icon-out 0.5s forwards;
+  animation-timing-function: cubic-bezier(0.5, -0.6, 1, 1);
+}
+i{
+  padding: 20px;
+  font-size: 2.5rem;
+}
+.order ul li::before {
+  content: "";
+  width: 110px;
+  height: 110px;
+  background: var(--clr);
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg) translate(-110%, -23px);
+  z-index: -1;
+  animation: back-out 0.5s forwards;
+  animation-timing-function: cubic-bezier(0.5s, -0.6, 1, 1);
+}
+.order ul li {
+  overflow: hidden;
+}
+.order ul li:hover a {
+  animation: icon-in 0.5s forwards;
+  animation-timing-function: cubic-bezier(0, 0, 0.4, 1.6);
+}
+
+.order ul li:hover:before {
+  animation: back-in 0.5s forwards;
+  animation-timing-function: cubic-bezier((0, 0, 0.4, 1.6));
+}
+
+@keyframes back-in {
+  0% {
+    transform: rotate(-45deg) translate(-110%, -23px);
+  }
+  80% {
+    transform: rotate(-45deg) translate(5%, -23px);
+  }
+  100% {
+    transform: rotate(-45deg) translate(0%, -23px);
+  }
+}
+
+@keyframes back-out {
+  0% {
+    transform: rotate(-45deg) translate(0%, -23px);
+  }
+  20% {
+    transform: rotate(-45deg) translate(5%, -23px);
+  }
+  100% {
+    transform: rotate(-45deg) translate(-12%, -23px);
+  }
+}
+
+@keyframes icon-in {
+  0% {
+    font-size: 1.5em;
+  }
+  80% {
+    color: #fff;
+    background-color: var(--clr);
+    font-size: 1.75em;
+  }
+  100% {
+    color: #fff;
+    background-color: var(--clr);
+    font-size: 1.6em;
+  }
+}
+
+@keyframes icon-out {
+  0% {
+    color: #fff;
+    font-size: 1.6em;
+  }
+  20% {
+    color: #fff;
+    font-size: 1.75em;
+  }
+  100% {
+    font-size: 1.5em;
+  }
+}
+
+.order ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.order ul li {
+  width: 80px;
+  height: 80px;
+  color: var(--clr);
+  line-height: 60px;
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.5s;
+  box-shadow: 0px 8px 16px -6px;
+}
+.order {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+.order-icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* END OF ICONS!!!!!! */
 footer p {
   margin: 0 auto;
 }

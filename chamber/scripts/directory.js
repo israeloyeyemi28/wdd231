@@ -55,7 +55,7 @@ function displayMembers(members, viewType) {
     let phone = document.createElement("h3");
     phone.innerHTML = `${member.phone}`;
     let industry = document.createElement("h3");
-    industry.innerHTML = `${member.industry}`;
+    industry.innerHTML = `Industry: ${member.industry}`;
     let website = document.createElement("h4");
     website.innerHTML = `Link: <a>${member.website}</a>`;
     let description = document.createElement("h3");
