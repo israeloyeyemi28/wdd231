@@ -13,7 +13,7 @@ const options = {
   second: "numeric",
 };
 const formattedDate = LastModifiedDate.toLocaleDateString(undefined, options);
-lastModified.innerHTML = `<h4>Last Updated : ${formattedDate}</h4>`;
+lastModified.innerHTML = `<h4>Updated : ${formattedDate}</h4>`;
 const hamButton = document.getElementById("menu");
 const nav = document.querySelector("#animateme");
 hamButton.addEventListener("click", function () {
@@ -35,7 +35,6 @@ async function fetchMemebers() {
     console.error("Error Fetching Members", error);
   }
 }
-
 function displayMembers(members, viewType) {
   cards.innerHTML = "";
   cards.className = viewType;

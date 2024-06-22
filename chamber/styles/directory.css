@@ -3,26 +3,30 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Caveat", cursive;
 }
 html{
   scroll-behavior: smooth;
 }
-
 body {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   font-family: sans-serif;
   line-height: 1.5;
   text-align: center;
   font-size: 16px;
+  background-color: #9087b8;
 }
 #head-txt {
   font-size: 2rem;
   padding: 1rem;
   padding-top: 1rem;
   margin: 0;
-  color: blue;
+  color: #5353ff;
 }
 #boost{
-  color: #024e02;
+  color: #0a8f0a;
 }
 #boost::after{
   content: "\1F680";
@@ -31,7 +35,6 @@ body {
 h2 {
   font-size: 1.2rem;
 }
-
 .logo {
   width: 50px;
   height: 50px;
@@ -39,47 +42,39 @@ h2 {
   border-radius: 10px;
   box-shadow: none;
 }
-
 .logo:hover {
   scale: 1.1;
 }
-
 .h1-sub {
   position: absolute;
   top: 75px;
   left: 80px;
+  color: #fff;
 }
-
 header {
-  background-color: #818488;
+  background-color: #062349;
   padding: 1rem;
   width: auto;
 }
-
 .head-div {
   display: flex;
 }
-
 nav {
   background-color: #000000;
   display: flex;
   flex-direction: column;
   color: #fff;
 }
-
 button {
   background: none;
   border: none;
-
 }
-
 .home-txt {
   font-size: 2rem;
   padding: 1rem;
   padding-left: 1rem;
   text-align: center;
 }
-
 /* Small View Navigation */
 #menu {
   font-size: 2rem;
@@ -90,15 +85,13 @@ button {
   top: 2.5rem;
   right: 1rem;
 }
-
 #menu::before {
   content: "☰";
+  color: #fff;
 }
-
 #menu.open::before {
   content: "❎";
 }
-
 .navigation a {
   display: none;
   padding: 1rem;
@@ -106,9 +99,7 @@ button {
   text-decoration: none;
   color: #fff;
   font-weight: 700;
-
 }
-
 .navigation a:hover {
   background-color: #3f3838;
   color: white;
@@ -117,15 +108,13 @@ button {
 .open a {
   display: block;
 }
-
 .active::before {
   content: "📍";
 }
 button:hover {
   filter: drop-shadow(2px 2px 2px rgba(0,0,0,.7));
 }
-
-/* Image background */
+/* Image background for the em img */
 .chamber-img {
   padding: 4rem;
   background-repeat: no-repeat;
@@ -138,24 +127,22 @@ button:hover {
   background-size: cover;
   background-size: calc(100% + 10rem);
 }
-
 .chamber-h2 {
   padding-top: 0.5rem;
   font-size: 22px;
-  color: #383838;
+  color: #ffffff;
 }
-
 .chamber-h1 {
-  color: #383838;
+  color: #fff8f8;
   font-size: 30px;
   font-weight: bolder;
 }
-
 main {
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
 .tickets {
   position: absolute;
   right: 30px;
@@ -185,9 +172,6 @@ main {
   margin: 1rem;
   align-items: center;
 }
-.grid section:nth-child(even){
-  background-color: #252477;
-}
 .list section img{
   display: none;
 }
@@ -197,9 +181,10 @@ main {
   padding: 2rem;
 }
 .list section{
-  display: block;
+  display: flex;
   padding: 1rem;
-  margin: 1rem;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 .desc-h3{
@@ -210,9 +195,12 @@ main {
   font-family: 'Times New Roman', Times, serif;
 }
 .list section:nth-child(even){
-  background-color: #252477;
+  background-color: #062349;
 }
-.list section h3:nth-child(even){
+.list section h2{
+  display: none;
+}
+.list section h3:nth-child(odd){
   display: none;
 }
 .list section.name{
@@ -222,14 +210,12 @@ section h3{
   font-size: 1.25rem;
   padding: .5rem;
 }
-
-
 img {
   width: 200px;
   height: auto;
   border-radius: 50%;
   border: 1px solid #fff;
-  box-shadow: 0 0 15px #fff;
+  box-shadow: 0 0 7.5px #fff;
   margin-top: 1rem;
 }
 .list {
@@ -238,17 +224,17 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 #cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   grid-gap: 2rem;
-  align-items: center;
+
 }
 .listCards{
   display: block;
   margin: 10px auto;
   background-color: #3f3838;
+  color: #fff;
 }
 #cards section{
   text-align: center;
@@ -256,7 +242,6 @@ img {
 #cards h3,h2{
   font-family: "Caveat", cursive;
 }
-
 #gridView,
 #listView {
   padding: 1rem;
@@ -283,7 +268,6 @@ section {
   filter: drop-shadow(2px 2px 2px rgba(0,0,0,.7));
   justify-items: center;
 }
-
 section img {
   width: 240px;
   height: auto;
@@ -295,101 +279,88 @@ section img {
 section a{
   text-decoration: underline;
 }
-
 ul>li {
   list-style-type: none;
   padding: 2rem;
 }
-
 footer {
-  padding: 2rem;
+  padding: 1rem;
   line-height: 1.5;
   text-align: left;
   width: auto;
   height: auto;
-  font-size: 2rem;
-  background-color: #818488;
-  font-family: "Roboto", sans-serif;
-  color: #000000;
+  background-color: #062349;
+  color: #ffffff;
 }
-
 .footer-con {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 1rem;
 }
-
 #icon-div {
   text-align: center;
 }
-
 #icon-div img {
   border-radius: 50%;
-  width: 100px;
+  width: 50px;
+  height: 50px;
   margin-right: 1rem;
 }
-
 footer p {
   margin: 0 auto;
 }
-
 @media screen and (min-width: 37.5em) {
   #menu {
     display: none;
-    /* hide hamburger button */
   }
-
-  /* h2 {
-    font-size: 4rem;
-  } */
-
   h1 {
     font-size: 2rem;
   }
-
   a {
     font-size: 1rem;
   }
-
   header {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
   nav {
     background-color: transparent;
     padding: 1rem;
     display: flex;
     flex-direction: row;
   }
-
   .navigation a {
     display: block;
     flex: 1 1 100%;
     padding: 1rem;
-    color: #000;
+    color: #ffffff;
   }
-
   .navigation a:hover {
     background-color: #0c910c;
     border-radius: 10px;
   }
-
   .active::before {
     content: "";
   }
-
   nav .active {
-    color: #000272;
     text-decoration: underline;
     border-radius: 10px;
     font-weight: bolder;
     padding-bottom: 20px; 
   }
+  footer{
+    font: 1.25rem;
+    padding: 10px;
+  }
+  #icon-div img{
+    width: 50px;
+    height: 50px;
+  }
   .footer-con {
+    padding: 10px;
      display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr;  */
-    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); 
   }
 }
