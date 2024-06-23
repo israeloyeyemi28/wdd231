@@ -331,6 +331,7 @@ i{
   z-index: -1;
   animation: back-out 0.5s forwards;
   animation-timing-function: cubic-bezier(0.5, -0.6, 1, 1);
+  animation-timing-function: cubic-bezier(0.5, -0.6, 1, 1);
 }
 .order ul li {
   overflow: hidden;
@@ -342,6 +343,7 @@ i{
 
 .order ul li:hover:before {
   animation: back-in 0.5s forwards;
+  animation-timing-function: cubic-bezier(0, 0, 0.4, 1.6);
   animation-timing-function: cubic-bezier(0, 0, 0.4, 1.6);
 }
 
