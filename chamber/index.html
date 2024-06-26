@@ -13,8 +13,7 @@
     <meta property="og:image"
         content="Ihttps://www.istockphoto.com/photo/big-traffic-tuk-tuks-buses-people-new-delhi-delhi-india-gm1309280640-399049531">
     <link rel="icon" href="images/favicon(1).ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/directory.css">
-    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>WDD 231 Web Frontend Development 1- Israel O. Oyedepo</title>
 </head>
 
@@ -153,6 +152,14 @@
         </div>
     </main>
     </footer>
+    <script>
+    const hamBurgerElement = document.querySelector("#menu");
+    const navElement = document.querySelector("#animateme");
+    hamBurgerElement.addEventListener("click", () => {
+        navElement.classList.toggle("open");
+        hamBurgerElement.classList.toggle("open");
+    })
+    </script>
 </body>
 
 </html>

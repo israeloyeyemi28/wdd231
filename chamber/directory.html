@@ -30,19 +30,23 @@
     <header>
     <div class="head-div">
         <img src="images/my-avatar.png" alt="FreshCleaners Logo" loading="lazy" class="logo">
-        <h1 id="head-txt">Biz<span class="boost">Boost</span></h1>
+        <h1 class="head-txt">Biz<span class="boost">Boost</span></h1>
         <p class="h1-sub">Chamber Of Commerce</p>
         </div>
         <button id="menu" title="Menu Button"></button>
-        <nav class="navigation" id="animateme">
-            <a href="index.html" title="Home-Page" id="home">Home</a>
-            <a href="#" title="Discover" id="discover">Discover</a>
-            <a href="#" title="Business-Directory" class="active" id="github">Directory</a>
-            <a href="#" title="Join Us" id="linkedin">Join</a>
+        <nav id="animateme">
+            <button id="myButton" title="Menu Button"></button>
+            <ul class="menuLinks"> 
+                <li><a href="directory.html" title="Home-Page"  id="home">Home</a>
+                </li>
+                <li><a href="#" title="Discover" id="discover">Discover</a></li>
+                <li><a href="#" title="Business Directory" class="active" id="github">Directory</a></li>
+                <li><a href="#" title="Join Us" id="linkedin">Join</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <div class="chamber-img">
+        <div class="chamber-img" loading="lazy">
             <div class="chamber-box">
                 <h1 class="chamber-h1">BizBoost Chamber Of Commerce </h1>
                 <h2 class="chamber-h2">Best Business Hub In The World!</h2>
@@ -54,7 +58,7 @@
         <button id = "gridView">Grid View</button>
         <button id = "listView">List View</button>
     </div>
-    <article id="cards" title="grids"><h6>.</h6></article>
+    <article id="cards"><h6>.</h6></article>
     </main>
     <footer>
         <div class="footer-con">

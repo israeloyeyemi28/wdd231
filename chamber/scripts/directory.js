@@ -14,11 +14,12 @@ const options = {
 };
 const formattedDate = LastModifiedDate.toLocaleDateString(undefined, options);
 lastModified.innerHTML = `<h4>Updated : ${formattedDate}</h4>`;
-const hamButton = document.getElementById("menu");
-const nav = document.querySelector("#animateme");
-hamButton.addEventListener("click", function () {
-  nav.classList.toggle("open");
-  hamButton.classList.toggle("open");
+// hamburger btn
+const hamBurgerElement = document.querySelector("#myButton");
+const navElement = document.querySelector("#animateme");
+hamBurgerElement.addEventListener("click", () => {
+  navElement.classList.toggle("open");
+  hamBurgerElement.classList.toggle("open");
 });
 const cards = document.getElementById("cards");
 const gridView = document.querySelector("#gridView");
@@ -41,12 +42,10 @@ function displayMembers(members, viewType) {
   members.forEach((member) => {
     let card = document.createElement("section");
     card.classList.add("card");
-    let name = document.createElement("h2");
-    name.className = "name";
-    name.innerHTML = `${member.name}`;
     let company = document.createElement("h3");
     company.innerHTML = `${member.company}`;
     let image = document.createElement("img");
+    image.className = "card-logo";
     image.setAttribute("src", member.image);
     image.setAttribute("alt", `Image Of ${member.name}`);
     image.setAttribute("loading", "lazy");
@@ -54,32 +53,16 @@ function displayMembers(members, viewType) {
     image.setAttribute("height", "440");
     let phone = document.createElement("h3");
     phone.innerHTML = `${member.phone}`;
-    let industry = document.createElement("h3");
-    industry.innerHTML = `Industry: ${member.industry}`;
+    
     let website = document.createElement("h4");
     website.innerHTML = `Link: <a>${member.website}</a>`;
-    let description = document.createElement("h3");
-    description.innerHTML = `${member.description}`;
     let address = document.createElement("h3");
     address.innerHTML = `${member.address}`;
-    let MembershipLevel = document.createElement("h3");
-    MembershipLevel.style.textTransform = "capitalize";
-    MembershipLevel.innerHTML = `${member.membershipLevel}`;
-    if (member.membershipLevel === "gold") {
-      MembershipLevel.style.color = "yellow";
-    } else {
-      MembershipLevel.style.color = "silver";
-    }
-    card.appendChild(name);
-    card.appendChild(company);
-    card.appendChild(phone);
-    card.appendChild(industry);
-    card.appendChild(description);
-    card.appendChild(address);
-    card.appendChild(MembershipLevel);
     card.appendChild(image);
+    card.appendChild(company);
+    card.appendChild(address);
+    card.appendChild(phone);
     card.appendChild(website);
-
     cards.appendChild(card);
   });
 }
