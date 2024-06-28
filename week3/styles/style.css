@@ -1,0 +1,21 @@
+main{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: gray;
+    padding: 2rem;
+    text-align: center;
+}
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+figcaption{
+    text-transform: capitalize;
+    color: navy;
+    margin: auto .3rem 0;
+}
+#current-temp{
+    font-size: 1.2rem;
+}
+footer, h1{
+    text-align: center;
+}

@@ -30,7 +30,6 @@ async function fetchMemebers() {
     const response = await fetch(url);
     const data = await response.json();
     const members = data.members;
-    console.table(members);
     return members;
   } catch (error) {
     console.error("Error Fetching Members", error);
@@ -53,7 +52,6 @@ function displayMembers(members, viewType) {
     image.setAttribute("height", "440");
     let phone = document.createElement("h3");
     phone.innerHTML = `${member.phone}`;
-    
     let website = document.createElement("h4");
     website.innerHTML = `Link: <a>${member.website}</a>`;
     let address = document.createElement("h3");
