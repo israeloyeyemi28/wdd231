@@ -13,7 +13,7 @@ const options = {
   second: "numeric",
 };
 const formattedDate = LastModifiedDate.toLocaleDateString(undefined, options);
-lastModified.innerHTML = `<h4>Updated : ${formattedDate}</h4>`;
+lastModified.innerHTML = `<p>Updated : ${formattedDate}</p>`;
 // hamburger btn
 const hamBurgerElement = document.querySelector("#myButton");
 const navElement = document.querySelector("#animateme");

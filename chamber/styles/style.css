@@ -1,9 +1,37 @@
+:root{
+  --whatsapp: "green";
+  --twitter: rgb(33, 60, 134);
+  --insta:  #ff0050;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Caveat", cursive;
+}
+#whatsapp{
+  color: green;
+}
+#whatsapp:hover{
+  color: #00ff00;
+  transition: ease-in-out 1s;
+}
+#twitter{
+  color: var(--twitter);
+}
+#twitter:hover{
+  color: #2d42b8;
+  transition: ease-in-out 1s;
+
+}
+#insta{
+  color: var(--insta);
+}
+#insta:hover{
+  color: rgb(240, 56, 93);
+  transition: ease-in-out 1s;
+
 }
 html{
   scroll-behavior: smooth;
@@ -122,9 +150,10 @@ button:hover {
   background-repeat: no-repeat;
   margin: 0 auto;
   width: 100%;
-  background-image: url(../images/hero-large.webp);
+  background-image: url(../images/lagos-large.webp);
   background-position: center;
   scroll-behavior: smooth;
+  color: #000;
   background-position: center;
   background-size: cover;
   background-size: calc(100% + 10rem);
@@ -137,10 +166,10 @@ img.card-logo{
 .chamber-h2 {
   padding-top: 0.5rem;
   font-size: 22px;
-  color: #ffffff;
+  color: #000000;
 }
 .chamber-h1 {
-  color: #fff8f8;
+  color: #000000;
   font-size: 30px;
   font-weight: bolder;
 }
@@ -342,77 +371,12 @@ i{
 .order ul li {
   overflow: hidden;
 }
-.order ul li:hover a {
-  animation: icon-in 0.5s forwards;
-  animation-timing-function: cubic-bezier(0, 0, 0.4, 1.6);
-}
-
-.order ul li:hover:before {
-  animation: back-in 0.5s forwards;
-  animation-timing-function: cubic-bezier(0, 0, 0.4, 1.6);
-  animation-timing-function: cubic-bezier(0, 0, 0.4, 1.6);
-}
-
-@keyframes back-in {
-  0% {
-    transform: rotate(-45deg) translate(-110%, -23px);
-  }
-  80% {
-    transform: rotate(-45deg) translate(5%, -23px);
-  }
-  100% {
-    transform: rotate(-45deg) translate(0%, -23px);
-  }
-}
-
-@keyframes back-out {
-  0% {
-    transform: rotate(-45deg) translate(0%, -23px);
-  }
-  20% {
-    transform: rotate(-45deg) translate(5%, -23px);
-  }
-  100% {
-    transform: rotate(-45deg) translate(-12%, -23px);
-  }
-}
-
-@keyframes icon-in {
-  0% {
-    font-size: 1.5em;
-  }
-  80% {
-    color: #fff;
-    background-color: var(--clr);
-    font-size: 1.75em;
-  }
-  100% {
-    color: #fff;
-    background-color: var(--clr);
-    font-size: 1.6em;
-  }
-}
-
-@keyframes icon-out {
-  0% {
-    color: #fff;
-    font-size: 1.6em;
-  }
-  20% {
-    color: #fff;
-    font-size: 1.75em;
-  }
-  100% {
-    font-size: 1.5em;
-  }
-}
-
 .order ul {
   list-style: none;
   display: flex;
+  flex-direction: row;
   gap: 20px;
 }
-
 .order ul li {
   width: 80px;
   height: 80px;
@@ -487,7 +451,6 @@ hr {
   width: 90%;
   background-color: #352d47;
 }
-
 .event{
   display: flex;
   text-transform: none;
