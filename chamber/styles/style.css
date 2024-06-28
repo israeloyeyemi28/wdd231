@@ -495,12 +495,13 @@ hr {
   list-style-type: disc;
 }
 #weather{
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   
 }
 #weather-icon{
+  margin-top: 30px;
   width: 100%;
   height: auto;
 
