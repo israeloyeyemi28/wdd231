@@ -1,3 +1,26 @@
+const year = document.getElementById("year");
+const lastModified = document.getElementById("lastModified");
+const today = new Date();
+const currentYear = today.getFullYear();
+year.textContent = currentYear;
+const LastModifiedDate = new Date(document.lastModified);
+const options = {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+  hour: "numeric",
+  minute: "numeric",
+  second: "numeric",
+};
+const formattedDate = LastModifiedDate.toLocaleDateString(undefined, options);
+lastModified.innerHTML = `<h4>Updated : ${formattedDate}</h4>`;
+// hamburger btn
+const hamBurgerElement = document.querySelector("#myButton");
+const navElement = document.querySelector("#animateme");
+hamBurgerElement.addEventListener("click", () => {
+  navElement.classList.toggle("open");
+  hamBurgerElement.classList.toggle("open");
+});
 // WEATHER API PART
 // select HTML elements in the document
 const currentTemp = document.querySelector(".current-temp");
