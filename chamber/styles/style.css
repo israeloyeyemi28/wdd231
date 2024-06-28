@@ -150,7 +150,7 @@ button:hover {
   background-repeat: no-repeat;
   margin: 0 auto;
   width: 100%;
-  background-image: url(../images/lagos-large.webp);
+  background-image: url(../images/hero-large.webp);
   background-position: center;
   scroll-behavior: smooth;
   color: #000;
@@ -166,10 +166,10 @@ img.card-logo{
 .chamber-h2 {
   padding-top: 0.5rem;
   font-size: 22px;
-  color: #000000;
+  color: #ffffff;
 }
 .chamber-h1 {
-  color: #000000;
+  color: #ffffff;
   font-size: 30px;
   font-weight: bolder;
 }
@@ -351,22 +351,17 @@ a {
   animation: icon-out 0.5s forwards;
   animation-timing-function: cubic-bezier(0.5, -0.6, 1, 1);
 }
+li>p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: 10px;
+  margin-bottom: 1.5rem
+}
 i{
   padding: 20px;
   font-size: 2.5rem;
-}
-.order ul li::before {
-  content: "";
-  width: 110px;
-  height: 110px;
-  background: var(--clr);
-  display: block;
-  position: absolute;
-  transform: rotate(-45deg) translate(-110%, -23px);
-  z-index: -1;
-  animation: back-out 0.5s forwards;
-  animation-timing-function: cubic-bezier(0.5, -0.6, 1, 1);
-  animation-timing-function: cubic-bezier(0.5, -0.6, 1, 1);
 }
 .order ul li {
   overflow: hidden;
@@ -383,9 +378,7 @@ i{
   color: var(--clr);
   line-height: 60px;
   border-radius: 12px;
-  position: relative;
-  transition: all 0.5s;
-  box-shadow: 0px 8px 16px -6px;
+  padding: 2rem;
 }
 .order {
 display: flex;
@@ -430,7 +423,6 @@ hr {
 }
 .event-box{
   padding-bottom: 2rem;
-  
   padding-top: 0;
   height: 100%;
   color: #fff;
@@ -454,6 +446,7 @@ hr {
 .event{
   display: flex;
   text-transform: none;
+  align-items: center;
   flex-direction: column;
   list-style-type: disc;
 }
@@ -461,6 +454,7 @@ hr {
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  text-transform: capitalize;
   
 }
 #weather-icon{
@@ -483,6 +477,16 @@ hr {
   display: grid;
   grid-template-columns: 1fr ;
   padding: 2rem;
+}
+#business-icon{
+  width: 150px;
+  height: 150px;
+}
+#forecast{
+  margin-top: 50px;
+}
+#forecast>p{
+  margin: 20px;
 }
 /* END OF INDEX.HTMl */
 @media screen and (min-width: 37.5em) {
@@ -547,9 +551,13 @@ hr {
   #business{
     width: 95%;
   }
+  #business-icon{
+    width: 25%;
+    height: 25%;
+  }
   #weather{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin-right: 1rem;
+    grid-template-columns: 1fr;
+    padding: 2rem;
   }
 }

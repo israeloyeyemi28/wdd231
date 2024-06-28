@@ -33,20 +33,22 @@ const humidity = document.querySelector(".humidity");
 const sunrise = document.querySelector(".sunrise");
 const sunset = document.querySelector(".sunset");
 const wind = document.querySelector(".wind");
+const forecastDiv = document.getElementById("forecast");
 let lat = 6.41;
 let lon = 2.89;
 // 6.415
 let apiKey = "c4e920fb56bf3504b04364c64c177fb7";
+// let forecastKey = "d02d603052c5fe03cb030b6ee2a49c00";
 // 2.89
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
-const forecastURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
-async function apiFetch() {
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+async function apiFetch(url, displayFunction) {
   try {
-    const response = await fetch(apiUrl);
+    const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
-      displayResults(data);
+      // console.log(data);
+      displayFunction(data);
     } else {
       throw Error(await response.text());
     }
@@ -54,10 +56,10 @@ async function apiFetch() {
     console.log(error);
   }
 }
-apiFetch();
+// apiFetch();
 
 function displayResults(data) {
-  currentTemp.textContent = `${data.main.temp}°C`;
+  currentTemp.textContent = `${Math.round(data.main.temp)}°C`;
   const iconSRC = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
   const cloud = `images/animated/cloudy.svg`;
   const rain = `images/animated/rainy-3.svg`;
@@ -72,7 +74,6 @@ function displayResults(data) {
   } else {
     weatherIcon.setAttribute("src", iconSRC);
   }
-
   weatherIcon.setAttribute("alt", alt);
   description.textContent = `${alt}`;
   currentLocation.textContent = `${data.name}`;
@@ -86,9 +87,79 @@ function displayResults(data) {
   // convert secs to milli secs
   const sunriseDate = new Date(sunriseTimestamp * 1000);
   const time = sunriseDate.toLocaleTimeString();
-  console.log(time);
   sunrise.innerHTML = time;
   const sunsetDate = new Date(sunsetTimestamp * 1000);
   const setTime = sunsetDate.toLocaleTimeString();
   sunset.innerHTML = setTime;
+  // console.log(data);
 }
+
+function displayForecast(data) {
+  // console.table(data);
+  const todayTemp = document.createElement("p");
+  const tomorrowTemp = document.createElement("p");
+  const nextTemp = document.createElement("p");
+  const tomorrow = new Date(data.list[8].dt_txt);
+  const nextDay = new Date(data.list[16].dt_txt);
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  todayTemp.innerHTML = `<strong>Today</strong>: ${Math.round(
+    data.list[0].main.temp
+  )}°C`;
+  tomorrowTemp.innerHTML = `${days[tomorrow.getDay()]}: <strong>${Math.round(
+    data.list[8].main.temp
+  )}°C</strong>`;
+  nextTemp.innerHTML = `${days[nextDay.getDay()]}:<strong>${Math.round(
+    data.list[16].main.temp
+  )}°C</strong>`;
+  forecastDiv.appendChild(todayTemp);
+  forecastDiv.appendChild(tomorrowTemp);
+  forecastDiv.appendChild(nextTemp);
+}
+apiFetch(weatherUrl, displayResults);
+apiFetch(forecastUrl, displayForecast);
+
+//Member logos
+const iconDiv = document.getElementById("loadIcons");
+const fileName = "./data/members.json";
+async function fetchMemebers() {
+  const response = await fetch(fileName);
+  if (response.ok) {
+    const data = await response.json();
+    displaySpotlights(data.members);
+  }
+}
+//dislay icons function
+const displaySpotlights = (members) => {
+  const spotlights = members.filter(
+    (member) =>
+      member.mebershipLevel === "gold" || member.memmbershipLevel === "silver"
+  );
+  const randomIcons = randomIcons(spotlights);
+  displayIcons(randomIcons.slice(0, 2));
+};
+function randomIcons(array) {
+  for (let i = array.lenght - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+  return array;
+}
+function displayIcons(members) {
+  members.forEach((member) => {
+    let logo = document.createElement("a");
+    logo.setAttribute("href", member.website);
+    logo.innerHTML = `<img src=${member.image} alt="logo for${member.name}"height="100" loading="lazy"`;
+    iconDiv.appendChild(logo);
+  });
+}
+fetchMemebers();
