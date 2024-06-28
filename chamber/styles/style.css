@@ -584,4 +584,9 @@ hr {
   #business{
     width: 95%;
   }
+  #weather{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-right: 1rem;
+  }
 }
