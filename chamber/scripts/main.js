@@ -99,6 +99,9 @@ function displayForecast(data) {
   const todayTemp = document.createElement("p");
   const tomorrowTemp = document.createElement("p");
   const nextTemp = document.createElement("p");
+  const forecastIcon = document.createElement("img");
+  const forecastIcon = document.createElement("img");
+  const forecastIcon = document.createElement("img");
   const tomorrow = new Date(data.list[8].dt_txt);
   const nextDay = new Date(data.list[16].dt_txt);
   const days = [
@@ -110,6 +113,21 @@ function displayForecast(data) {
     "Friday",
     "Saturday",
   ];
+  const iconSRC = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  const cloud = `images/animated/cloudy.svg`;
+  const rain = `images/animated/rainy-3.svg`;
+  let alt = data.weather[0].description;
+  const clear = `images/animated/day.svg`;
+  if (data.weather[0].main === "Clouds") {
+    forecastIcon.setAttribute("src", cloud);
+  } else if (data.weather[0].main === "Clear") {
+    forecastIcon.setAttribute("src", clear);
+  } else if (data.weather[0].main === "Rain") {
+    forecastIcon.setAttribute("src", rain);
+  } else {
+    forecastIcon.setAttribute("src", iconSRC);
+  }
+  forecastIcon.setAttribute("alt", alt);
   todayTemp.innerHTML = `<strong>Today</strong>: ${Math.round(
     data.list[0].main.temp
   )}°C`;
@@ -127,26 +145,27 @@ apiFetch(weatherUrl, displayResults);
 apiFetch(forecastUrl, displayForecast);
 
 //Member logos
-const iconDiv = document.getElementById("loadIcons");
-const fileName = "./data/members.json";
+const cards = document.getElementById("business");
+const fileName = "data/members.json";
 async function fetchMemebers() {
   const response = await fetch(fileName);
   if (response.ok) {
     const data = await response.json();
     displaySpotlights(data.members);
+    console.table(data);
   }
 }
 //dislay icons function
-const displaySpotlights = (members) => {
+function displaySpotlights(members) {
   const spotlights = members.filter(
     (member) =>
-      member.mebershipLevel === "gold" || member.memmbershipLevel === "silver"
+      member.membershipLevel === "gold" || member.membershipLevel === "silver"
   );
-  const randomIcons = randomIcons(spotlights);
-  displayIcons(randomIcons.slice(0, 2));
-};
-function randomIcons(array) {
-  for (let i = array.lenght - 1; i > 0; i--) {
+  const randomSpotlights = shuffleArray(spotlights);
+  displayMembers(randomSpotlights.slice(0, 2));
+}
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     const temp = array[i];
     array[i] = array[j];
@@ -154,12 +173,20 @@ function randomIcons(array) {
   }
   return array;
 }
-function displayIcons(members) {
+function displayMembers(members) {
   members.forEach((member) => {
-    let logo = document.createElement("a");
-    logo.setAttribute("href", member.website);
-    logo.innerHTML = `<img src=${member.image} alt="logo for${member.name}"height="100" loading="lazy"`;
-    iconDiv.appendChild(logo);
+    let link = document.createElement("a");
+    let logo = document.createElement("img");
+    link.setAttribute("href", member.website);
+    let image = document.createElement("img");
+    image.className = "card-logo";
+    image.setAttribute("src", member.image);
+    image.setAttribute("alt", `Image Of ${member.name}`);
+    image.setAttribute("loading", "lazy");
+    image.setAttribute("width", "340");
+    image.setAttribute("height", "440");
+    cards.appendChild(logo);
+    cards.appendChild(image);
   });
 }
 fetchMemebers();
