@@ -100,8 +100,8 @@ function displayForecast(data) {
   const tomorrowTemp = document.createElement("p");
   const nextTemp = document.createElement("p");
   const forecastIcon = document.createElement("img");
-  const forecastIcon = document.createElement("img");
-  const forecastIcon = document.createElement("img");
+  const tomorrowIcon = document.createElement("img");
+  const nextDayIcon = document.createElement("img");
   const tomorrow = new Date(data.list[8].dt_txt);
   const nextDay = new Date(data.list[16].dt_txt);
   const days = [
@@ -120,14 +120,24 @@ function displayForecast(data) {
   const clear = `images/animated/day.svg`;
   if (data.weather[0].main === "Clouds") {
     forecastIcon.setAttribute("src", cloud);
+    nextDayIcon.setAttribute("src", cloud);
+    tomorrowIcon.setAttribute("src", cloud);
   } else if (data.weather[0].main === "Clear") {
     forecastIcon.setAttribute("src", clear);
+    tomorrowIcon.setAttribute("src", clear);
+    nextDayIcon.setAttribute("src", clear);
   } else if (data.weather[0].main === "Rain") {
     forecastIcon.setAttribute("src", rain);
+    nextDayIcon.setAttribute("src", rain);
+    tomorrowIcon.setAttribute("src", rain);
   } else {
     forecastIcon.setAttribute("src", iconSRC);
+    tomorrowIcon.setAttribute("src", iconSRC);
+    nextDayIcon.setAttribute("src", iconSRC);
   }
   forecastIcon.setAttribute("alt", alt);
+  tomorrowIcon.setAttribute("alt", alt);
+  nextDayIcon.setAttribute("alt", alt);
   todayTemp.innerHTML = `<strong>Today</strong>: ${Math.round(
     data.list[0].main.temp
   )}°C`;
@@ -140,6 +150,9 @@ function displayForecast(data) {
   forecastDiv.appendChild(todayTemp);
   forecastDiv.appendChild(tomorrowTemp);
   forecastDiv.appendChild(nextTemp);
+  forecastDiv.appendChild(forecastIcon);
+  forecastDiv.appendChild(tomorrowIcon);
+  forecastDiv.appendChild(nextDayIcon);
 }
 apiFetch(weatherUrl, displayResults);
 apiFetch(forecastUrl, displayForecast);
