@@ -57,7 +57,6 @@ async function apiFetch(url, displayFunction) {
   }
 }
 // apiFetch();
-
 function displayResults(data) {
   currentTemp.textContent = `${Math.round(data.main.temp)}°C`;
   const iconSRC = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
@@ -93,7 +92,6 @@ function displayResults(data) {
   sunset.innerHTML = setTime;
   // console.log(data);
 }
-
 function displayForecast(data) {
   // console.table(data);
   const todayTemp = document.createElement("p");
@@ -125,7 +123,6 @@ function displayForecast(data) {
 }
 apiFetch(weatherUrl, displayResults);
 apiFetch(forecastUrl, displayForecast);
-
 //Member logos
 const cards = document.getElementById("business");
 const fileName = "data/members.json";
@@ -157,17 +154,17 @@ function shuffleArray(array) {
 }
 function displayMembers(members) {
   members.forEach((member) => {
-    // let link = document.createElement("a");
+    let link = document.createElement("a");
     // let logo = document.createElement("img")
-    link.innerHTML = `<a>Link ${member.website}</a>`;
+    link.innerHTML = `Link: <a style="text-decoration: underline">${member.website}</a>`;
     link.className = "logoLink";
     let image = document.createElement("img");
     image.className = "random-logo";
     image.setAttribute("src", member.image);
     image.setAttribute("alt", `Image Of ${member.name}`);
     image.setAttribute("loading", "lazy");
-    image.setAttribute("width", "340");
-    image.setAttribute("height", "440");
+    image.setAttribute("width", "300");
+    image.setAttribute("height", "350");
     cards.appendChild(link);
     cards.appendChild(image);
   });

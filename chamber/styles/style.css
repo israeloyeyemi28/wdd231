@@ -98,6 +98,7 @@ nav a {
   text-decoration: none;
   padding: 1rem;
   color: #fff;
+  cursor: pointer;
   font-weight: 700;
 }
 nav a:hover {
@@ -268,6 +269,9 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
   grid-gap: 2rem;
 }
+a{
+  cursor: pointer;
+}
 .listCards{
   display: block;
   margin: 10px auto;
@@ -437,12 +441,6 @@ hr {
   background-color: #352d47;
 }
 #business{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 2rem;
-  padding-top: 0;
   height: 100%;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -464,6 +462,12 @@ hr {
   text-transform: capitalize;
   
 }
+.randomLogo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 #weather-icon{
   margin-top: 30px;
   width: 100%;
@@ -482,8 +486,15 @@ hr {
 }
 #business{
   display: grid;
-  grid-template-columns: 1fr ;
-  padding: 2rem;
+  grid-template-columns: 2fr ;
+  place-items: center;
+  /* padding: 2rem; */
+}
+.spotlightHead{
+  background-color: #030429;
+  padding: 2.5rem;
+  position: relative;
+  width: 100%;
 }
 #business-icon{
   width: 150px;
@@ -505,6 +516,7 @@ hr {
   }
   a {
     font-size: 1rem;
+    cursor: pointer;
   }
   header {
     display: flex;
@@ -522,6 +534,7 @@ hr {
   }
   nav a {
     color: #ffffff;
+    cursor: pointer;
   }
   nav a:hover {
     background-color: #0c910c;
@@ -557,6 +570,11 @@ hr {
   }
   #business{
     width: 95%;
+  }
+  #business{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 2.75rem 0;
   }
   #business-icon{
     width: 25%;
