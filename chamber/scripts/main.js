@@ -99,9 +99,6 @@ function displayForecast(data) {
   const todayTemp = document.createElement("p");
   const tomorrowTemp = document.createElement("p");
   const nextTemp = document.createElement("p");
-  const forecastIcon = document.createElement("img");
-  const tomorrowIcon = document.createElement("img");
-  const nextDayIcon = document.createElement("img");
   const tomorrow = new Date(data.list[8].dt_txt);
   const nextDay = new Date(data.list[16].dt_txt);
   const days = [
@@ -113,31 +110,6 @@ function displayForecast(data) {
     "Friday",
     "Saturday",
   ];
-  const iconSRC = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  const cloud = `images/animated/cloudy.svg`;
-  const rain = `images/animated/rainy-3.svg`;
-  let alt = data.weather[0].description;
-  const clear = `images/animated/day.svg`;
-  if (data.weather[0].main === "Clouds") {
-    forecastIcon.setAttribute("src", cloud);
-    nextDayIcon.setAttribute("src", cloud);
-    tomorrowIcon.setAttribute("src", cloud);
-  } else if (data.weather[0].main === "Clear") {
-    forecastIcon.setAttribute("src", clear);
-    tomorrowIcon.setAttribute("src", clear);
-    nextDayIcon.setAttribute("src", clear);
-  } else if (data.weather[0].main === "Rain") {
-    forecastIcon.setAttribute("src", rain);
-    nextDayIcon.setAttribute("src", rain);
-    tomorrowIcon.setAttribute("src", rain);
-  } else {
-    forecastIcon.setAttribute("src", iconSRC);
-    tomorrowIcon.setAttribute("src", iconSRC);
-    nextDayIcon.setAttribute("src", iconSRC);
-  }
-  forecastIcon.setAttribute("alt", alt);
-  tomorrowIcon.setAttribute("alt", alt);
-  nextDayIcon.setAttribute("alt", alt);
   todayTemp.innerHTML = `<strong>Today</strong>: ${Math.round(
     data.list[0].main.temp
   )}°C`;
@@ -150,9 +122,6 @@ function displayForecast(data) {
   forecastDiv.appendChild(todayTemp);
   forecastDiv.appendChild(tomorrowTemp);
   forecastDiv.appendChild(nextTemp);
-  forecastDiv.appendChild(forecastIcon);
-  forecastDiv.appendChild(tomorrowIcon);
-  forecastDiv.appendChild(nextDayIcon);
 }
 apiFetch(weatherUrl, displayResults);
 apiFetch(forecastUrl, displayForecast);
@@ -188,17 +157,18 @@ function shuffleArray(array) {
 }
 function displayMembers(members) {
   members.forEach((member) => {
-    let link = document.createElement("a");
-    let logo = document.createElement("img");
-    link.setAttribute("href", member.website);
+    // let link = document.createElement("a");
+    // let logo = document.createElement("img")
+    link.innerHTML = `<a>Link ${member.website}</a>`;
+    link.className = "logoLink";
     let image = document.createElement("img");
-    image.className = "card-logo";
+    image.className = "random-logo";
     image.setAttribute("src", member.image);
     image.setAttribute("alt", `Image Of ${member.name}`);
     image.setAttribute("loading", "lazy");
     image.setAttribute("width", "340");
     image.setAttribute("height", "440");
-    cards.appendChild(logo);
+    cards.appendChild(link);
     cards.appendChild(image);
   });
 }

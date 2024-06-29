@@ -163,6 +163,12 @@ img.card-logo{
   height: 75px;
   border-radius: 10px;
 }
+img.random-logo{
+  border: none;
+  width: 70px;
+  height: 75px;
+  border-radius: 10px;
+}
 .chamber-h2 {
   padding-top: 0.5rem;
   font-size: 22px;
@@ -432,6 +438,7 @@ hr {
 }
 #business{
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding-bottom: 2rem;
