@@ -34,8 +34,8 @@ const sunrise = document.querySelector(".sunrise");
 const sunset = document.querySelector(".sunset");
 const wind = document.querySelector(".wind");
 const forecastDiv = document.getElementById("forecast");
-let lat = 6.41;
-let lon = 2.89;
+let lat = 6.70;
+let lon = 3.25;
 // 6.415
 let apiKey = "c4e920fb56bf3504b04364c64c177fb7";
 // let forecastKey = "d02d603052c5fe03cb030b6ee2a49c00";
