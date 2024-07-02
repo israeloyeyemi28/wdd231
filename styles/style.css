@@ -19,10 +19,28 @@ h1 {
 .head-div {
   display: flex;
 }
+.text{
+  letter-spacing: 2.5px;
+  font-family: cursive;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s, cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+  50%{
+    border-color: transparent;
+  }  
+
+}
+@keyframes typing {
+  from{width: 0;}
+}
 .avatar {
-  width: 70px;
+  width: 85px;
   height: 70px;
-  margin: 20px;
+  margin-top: 1rem;
   border-radius: 10px;
 }
 header {
@@ -39,6 +57,7 @@ button {
   background: none;
   border: none;
 }
+
 #menu {
   font-size: 2rem;
   border: 0;
@@ -197,9 +216,44 @@ hr {
   color: #000000;
   padding: 20px;
 }
+.course-card-completed:hover, .course-card-completed:focus{
+  background: #126d0f;
+  color: #fff;
+}
+.course-card:hover, .course-card:focus{
+  background: #585f5f;
+  color: #fff;
+}
 .course-list {
   display: flex;
   flex-direction: column;
+}
+.modal{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  padding: 1em;
+  max-width: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+}
+.modal::backdrop{
+  background-color: gray;
+  opacity: .5;
+}
+#closeModal{
+  border: 2px solid black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+}
+
+:modal{
+  background-color: rgb(7, 97, 19);
+  color: #fff;
+  border-radius: 10px;
+  border: 3px solid rgb(29, 31, 29);
 }
 footer {
   padding: 2rem;
@@ -214,6 +268,27 @@ footer {
 }
 footer p {
   margin: 0 auto;
+}
+dialog{
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+}
+
+::backdrop{
+  background-color: rgba(0,0,0,0.5);
+}
+
+dialog button{
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid rgba(0,0,0,0.1);
 }
 @media screen and (min-width: 37.5em) {
   header {
@@ -297,5 +372,8 @@ footer p {
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+  .avatar{
+    margin: 0;
   }
 }

@@ -129,7 +129,7 @@ button {
   background: none;
   color: black;
   position: absolute;
-  top: 2.5rem;
+  top: 1.75rem;
   right: 1rem;
 }
 #myButton::before {
@@ -386,7 +386,7 @@ i{
   width: 80px;
   height: 80px;
   color: var(--clr);
-  line-height: 60px;
+  /* line-height: 60px; */
   border-radius: 12px;
   padding: 2rem;
 }

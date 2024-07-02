@@ -89,39 +89,41 @@ const courses = [
     completed: false,
   },
 ];
-createCards(courses);
-calcCredits();
-function createCards(course) {
+
+displayCards(courses);
+function displayCards(filteredCourses) {
   const courseList = document.querySelector(".course-list");
   courseList.innerHTML = "";
-  courses.forEach((course) => {
+  filteredCourses.forEach((course) => {
     const card = document.createElement("div");
-    // if course.completed is true sert the name to
-    card.setAttribute(
-      "class",
-      course.completed ? "course-card-completed" : "course-card"
-    );
+    if (course.completed == true) {
+      card.innerHTML = `<h2>${course.subject} ${course.number} ${course.title}
+          </h2>
+          <p>Credits: ${course.credits}</p>
+          <span>Completed: ${course.completed}</span>
+          `;
+      card.setAttribute(
+        "class",
+        course.completed ? "course-card-completed" : "course-card"
+      );
+    } else {
+      card.setAttribute(
+        "class",
+        course.completed ? "course-card-completed" : "course-card"
+      );
+      card.innerHTML = `<h2>${course.subject} ${course.number} ${course.title}
+          </h2>
+          <p>Credits: ${course.credits}</p>
+          <span>Completed: ${course.completed}</span>`;
+        }
+      courseList.appendChild(card);
+      card.addEventListener("click", () => {
+        displayModal(course);
+      });
 
-    card.innerHTML = `<h2>${course.subject} ${course.number} ${course.title}
-    </h2>
-    <p>Credits: ${course.credits}</p>
-    <p>Technology: ${course.technology.join(", ")}</p>
-    <span>Completed: ${course.completed}</span>
-    `;
-
-    courseList.appendChild(card);
   });
 }
-// calculate the total credits
-function calcCredits() {
-  const totalCredits = courses.reduce((acc, course) => acc + course.credits, 0);
-  document.getElementById("total-credits-value").innerText = totalCredits;
-}
-const courseBox = document.querySelector(".course");
-courseBox.setAttribute(
-  "class",
-  course.completed ? "course-box-completed" : "course-box-incomplete"
-);
+
 function filterCourses(subject) {
   let courseBox = document.querySelectorAll(".course");
   courseBox.forEach((course) => {
@@ -134,5 +136,32 @@ function filterCourses(subject) {
         course.style.display = "none";
       }
     }
+  });
+}
+
+calcCredits();
+// calculate the total credits
+function calcCredits() {
+  const totalCredits = courses.reduce((acc, course) => acc + course.credits, 0);
+  document.getElementById("total-credits-value").innerText = totalCredits;
+}
+
+const courseDetails = document.getElementById("course-details");
+function displayModal(course) {
+  courseDetails.innerHTML = "";
+  courseDetails.innerHTML = `
+  <div class="modal-border">
+  <button id="closeModal">X</button>
+  <h2>${course.subject}  ${course.number}</h2>
+  </div>
+  <h3>${course.title}</h3>
+  <p><strong>Credits</strong>: ${course.credits}</p>
+  <p><strong>Certificate</strong>: ${course.certificate}</p>
+  <p>${course.description}</p>
+  <p><strong>Technology</strong>: ${course.technology.join(", ")}</p>
+  `;
+  courseDetails.showModal();
+  document.querySelector("#closeModal").addEventListener("click", () => {
+    courseDetails.close();
   });
 }

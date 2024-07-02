@@ -1,0 +1,39 @@
+.modal{
+    padding: 1em;
+    max-width: 50ch;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+}
+.modal::backdrop{
+    background-color: gray;
+}
+
+body{
+    min-height: 100vh;
+    margin: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+.button{
+    border: 0;
+    cursor: pointer;
+    background-color: #333;
+    color: #eee;
+    padding: .5rem 1rem;
+}
+.button:hover, .button:focus{
+    background: purple;
+
+}
+.close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+}
+
+:modal{
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid green;
+}

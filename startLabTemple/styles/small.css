@@ -1,0 +1,35 @@
+*{box-sizing: border-box;}
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    line-height: 60px;
+}
+#showHere{
+    gap: 30px;
+    color: rgb(129, 76, 76);
+
+}
+#mydialog{
+    padding:2rem;
+    text-align: center;
+}
+#mydialog h2{
+    color: blue;
+    margin: 0;
+}
+#mydialog button{
+    margin: 0;
+    border: 1px solid black;
+
+}
+::backdrop{
+    background-color: rgb(44, 175, 44);
+    opacity: 0.5;
+}
+#mydialog div{
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: #ddd;
+}
