@@ -94,7 +94,7 @@
         <button class="tickets">Keynotes Tickets</button>
       </div>
       <h1 class="home-txt">Join Us</h1>
-      <form action="thankyou.html" method="get" class="form">
+      <form action="thankyou.html" method="GET" class="form">
         <label
           >First Name
           <input
@@ -117,9 +117,9 @@
           >Organization Title<input
             type="text"
             name="organization-title"
-            pattern="[a-zA-Z\- ]{7,}"
             required
-            autocomplete="organization-title"
+            autocomplete="organizational title"
+            minlength="7"
             title="organization-title"
         /></label>
         <label
@@ -135,7 +135,6 @@
         <label
           >Phone Number:<input
             type="tel"
-            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
             name="phone"
             required
             autocomplete="tel"
@@ -150,31 +149,47 @@
             title="Organization Name"
         /></label>
         <h2>Membership Level</h2>
-        <label class="np member"
-          ><input type="radio" name="membership" value="membership" checked />NP
-          Membership</label
+        <label class="np-member"
+          ><input
+            type="radio"
+            name="membership"
+            value="Non-profit Membership"
+            checked
+          />NP Membership</label
         >
-        <label class="bronze member"
-          ><input type="radio" name="membership" value="membership" />Bronze
-          Membership</label
+        <label class="bronze-member"
+          ><input
+            type="radio"
+            name="membership"
+            value="Bronze Membership"
+          />Bronze Membership</label
         >
-        <label class="silver member"
-          ><input type="radio" name="membership" value="membership" />Silver
-          Membership</label
+        <label class="silver-member"
+          ><input
+            type="radio"
+            name="membership"
+            value="Silver Membership"
+          />Silver Membership</label
         >
-        <label class="gold member"
-          ><input type="radio" name="membership" value="membership" />Gold
+        <label class="gold-member"
+          ><input type="radio" name="membership" value="Gold Membership" />Gold
           Membership</label
         >
         <label for="description">Description: </label>
         <textarea name="description" id="description"></textarea>
-        <input type="hidden" name="timestamp" value="" id="timestamp" />
+        <input type="hidden" name="timestamp" id="timestamp" />
         <input type="submit" name="submit" id="submit" value="Join Chamber" />
       </form>
-      <dialog id="myDialog"></dialog>
+      <dialog id="membershipDetails">
+        <h2 class="benefits-txt"></h2>
+        <div class="benefits"></div>
+        <button class="close-btn">&#x274C;</button>
+      </dialog>
       <div class="event-box-logo">
         <div class="event" id="business">
-          <div class="spotlightHead"><h1>Spotlight</h1></div>
+          <div class="spotlightHead">
+            <h1>Spotlight</h1>
+          </div>
         </div>
       </div>
     </main>

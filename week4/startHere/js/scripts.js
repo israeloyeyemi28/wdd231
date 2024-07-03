@@ -1,4 +1,5 @@
 let currentUrl = window.location.href;
+console.log(currentUrl)
 let everthing = currentUrl.split("?");
 let formData = everthing[1].split("&");
 

@@ -69,9 +69,93 @@ function displayMembers(members) {
     image.setAttribute("height", "350");
     cards.appendChild(image);
     cards.appendChild(link);
-    // membershipLabel.addEventListener("click", () => {
-    //   displayModal(course);
-    // });
   });
 }
-// Join html part
+const memberDetails = document.getElementById("membershipDetails");
+const np = document.querySelector(".np-member");
+const bronze = document.querySelector(".bronze-member");
+const silver = document.querySelector(".silver-member");
+const gold = document.querySelector(".gold-member");
+const closeModal = document.querySelector(".close-btn");
+const benefits = document.querySelector(".benefits");
+const benefitsTxt = document.querySelector(".benefits-txt");
+// np
+np.addEventListener("click", (event) => {
+  if (event.target.className === "np-member") {
+    benefits.innerHTML = `
+    <ul>
+      <li>Networking Opportunities</li>
+      <li>Access to resources and information</li>
+      <li>Access to Chamber events and conferences</li>
+    </ul>
+    <a href="#">Terms and Conditions</a>
+    `;
+    benefitsTxt.textContent = `Non Profits Benefits`;
+    memberDetails.showModal();
+    closeModal.addEventListener("click", function () {
+      memberDetails.close();
+    });
+  }
+});
+// bronze
+bronze.addEventListener("click", (event) => {
+  if (event.target.className === "bronze-member") {
+    benefits.innerHTML = `
+    <ul>
+      <li>Listing Chamber's online directory</li>
+      <li>Subscription to newsletter</li>
+      <li>Access to Chamber events and conferences, and networking opportunities</li>
+    </ul>
+    <a  href="#">Terms and Conditions</a>
+    `;
+    benefitsTxt.textContent = `Bronze Benefits`;
+    benefits.style = "color:#fff;";
+    memberDetails.showModal();
+    closeModal.addEventListener("click", function () {
+      memberDetails.close();
+    });
+  }
+});
+// silver
+silver.addEventListener("click", (event) => {
+  if (event.target.className === "silver-member") {
+    benefits.innerHTML = `
+    <ul>
+      <li>All Bronze Benefits</li>
+      <li>Enhanced Listing in the online directory with logo and description</li>
+      <li>Priority registration for Chamber events</li>
+      <li>Discounts on chamber programs and services</li>
+      <li>Limited ads in Chamber publications</li>
+    </ul>
+    <a href="#">Terms and Conditions</a>
+    `;
+    benefitsTxt.textContent = `Silver Benefits`;
+    memberDetails.showModal();
+    closeModal.addEventListener("click", function () {
+      memberDetails.close();
+    });
+  }
+});
+// gold
+gold.addEventListener("click", (event) => {
+  if (event.target.className === "gold-member") {
+    benefits.innerHTML = `
+    <ul>
+      <li>All Silver Benefits</li>
+      <li>Prominient listing in the online directory with features placement</li>
+      <li>Complimentary ticketsto Chamber events and conferences</li>
+      <li>Discounts on chamber programs and services</li>
+      <li>Access to exclusive Gold-only events and networking opportunities</li>
+      <li>Free advertising in chamber publications and website</li>
+      <li>Personalized business consulting and advocacy</li>
+    </ul>
+    <a href="#">Terms and Conditions</a>
+    `;
+    benefitsTxt.textContent = `Silver Benefits`;
+    memberDetails.showModal();
+    closeModal.addEventListener("click", function () {
+      memberDetails.close();
+    });
+  }
+});
+

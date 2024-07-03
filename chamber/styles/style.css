@@ -320,7 +320,7 @@ section a {
 }
 ul li {
   list-style-type: none;
-  padding: 2rem;
+  padding: 1.05rem;
 }
 footer {
   padding: 1rem;
@@ -344,6 +344,9 @@ footer {
 a {
   text-decoration: none;
   padding: 0;
+}
+.second-main a{
+  text-decoration: underline;
 }
 .order a {
   width: 100%;
@@ -515,7 +518,7 @@ hr {
 /* Form start */
 form {
   margin: 1rem 2%;
-  background-color: #466086;
+  background-color: #1b3863;
   color: white;
   border-radius: 10px;
   label {
@@ -584,6 +587,49 @@ form {
     font-size: 1.2rem;
     appearance: none;
   }
+}
+/* MODALS TRYOUT */
+#membershipDetails{
+  position: absolute;
+  top: 100vh;
+  left: 50px;
+  padding: 1em;
+  max-width: 50ch;
+  border: 0;
+  box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+}
+#membershipDetails a{
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+::backdrop{
+  background-color: gray;
+  opacity: .5;
+}
+.close-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+}
+
+:modal{
+  background-color: #020972;
+  color: #fff;
+  border-radius: 10px;
+  border: 3px solid rgb(29, 31, 29);
+}
+.second-main{
+  background: linear-gradient(blue, rgb(12, 128, 79));
+  padding: 3rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 37.5em) {
   #myButton {
@@ -663,4 +709,15 @@ form {
     grid-template-columns: 1fr;
     padding: 2rem;
   }
+  form {
+    max-width: 500px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 2rem;
+  }
+  textarea{
+    padding: 20px;
+    margin-left: 30px;
+  }
+  
 }
