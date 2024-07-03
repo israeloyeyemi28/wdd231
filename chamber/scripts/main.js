@@ -126,6 +126,7 @@ apiFetch(forecastUrl, displayForecast);
 //Member logos
 const cards = document.getElementById("business");
 const fileName = "data/members.json";
+// FETCH MEMBERS
 async function fetchMemebers() {
   const response = await fetch(fileName);
   if (response.ok) {
@@ -134,14 +135,16 @@ async function fetchMemebers() {
     console.table(data);
   }
 }
-//dislay icons function
+fetchMemebers();
+//dislay icons function & export it
 function displaySpotlights(members) {
   const spotlights = members.filter(
     (member) =>
       member.membershipLevel === "gold" || member.membershipLevel === "silver"
   );
   const randomSpotlights = shuffleArray(spotlights);
-  displayMembers(randomSpotlights.slice(0, 2));
+  const logoNum = 2;
+  displayMembers(randomSpotlights.slice(0, logoNum));
 }
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -165,8 +168,7 @@ function displayMembers(members) {
     image.setAttribute("loading", "lazy");
     image.setAttribute("width", "300");
     image.setAttribute("height", "350");
-    cards.appendChild(link);
     cards.appendChild(image);
+    cards.appendChild(link);
   });
 }
-fetchMemebers();

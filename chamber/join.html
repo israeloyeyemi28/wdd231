@@ -52,7 +52,7 @@
     />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <title>BizBoost Chamber OF Commerce - Israel O. Oyedepo</title>
   </head>
   <body>
@@ -93,48 +93,88 @@
         </div>
         <button class="tickets">Keynotes Tickets</button>
       </div>
-      <h1 class="home-txt">Home-Page</h1>
-      <div class="container-box">
-        <div class="event-box" id="event-div">
-          <div class="title"><h1>Events</h1></div>
-          <div class="event">
-            <ul>
-                <li>&#128227 Registration is open for the 2024 Local Businesses in Action Convention. Get your tickets today!!</li>
-                <li>&#128227 Join Us on the 30<sup>th</sup> July For 2024 Chamber Foundation Golf Clasic</li>
-                <li>&#128227 12<sup>th</sup> August Social Media for Business Clinic</li>
-            </ul>
-          </div>
-        </div>
-        <div class="event-box">
-          <div class="title"><h1>Current Weather</h1></div>
-          <div class="event" id="weather">
-            <div class="icon-box">
-              <img loading="lazy" class="weather-icon" alt="Weather icon" />
-            </div>
-            <div class="details-box">
-              <p>Location: <span class="current-location"></span></p>
-              <p>Description: <span class="description"></span></p>
-              <p>Today: <span class="current-temp"></span></p>
-              <p>Wind Speed: <span class="wind"></span></p>
-              <p>Humidity: <span class="humidity"></span></p>
-              <p>Sunrise: <span class="sunrise"></span></p>
-              <p>Sunset: <span class="sunset"></span></p>
-              <p>High: <span class="high"></span></p>
-              <p>Low: <span class="low"></span></p>
-            </div>
-          </div>
-        </div>
-        <div class="event-box">
-          <div class="title"><h1>Weather Forecast</h1></div>
-          <div class="event" id="forecast">
-          </div>
-        </div>
-    </div>
-    <div class="event-box-logo">
-      <div class="event" id="business">
-        <div class="spotlightHead"><h1>Spotlight</h1></div>
-      </div>
-    </div>
+      <h1 class="home-txt">Join Us</h1>
+      <form action="thankyou.html" method="get" class="form">
+        <label
+          >First Name
+          <input
+            type="text"
+            name="first"
+            required
+            autocomplete="first name"
+            title="Your First Name"
+        /></label>
+        <label
+          >Last Name
+          <input
+            type="text"
+            name="last"
+            required
+            autocomplete="last name"
+            title="Your Last Name"
+        /></label>
+        <label
+          >Organization Title<input
+            type="text"
+            name="organization-title"
+            pattern="[a-zA-Z\- ]{7,}"
+            required
+            autocomplete="organization-title"
+            title="organization-title"
+        /></label>
+        <label
+          >Email
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="john89@gmail.com"
+            title="Your Email"
+            autocomplete="email"
+        /></label>
+        <label
+          >Phone Number:<input
+            type="tel"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            name="phone"
+            required
+            autocomplete="tel"
+            title="Phone Number"
+        /></label>
+        <label
+          >Organization Name:
+          <input
+            type="text"
+            name="organization"
+            autocomplete="organization"
+            title="Organization Name"
+        /></label>
+        <h2>Membership Level</h2>
+        <label class="np member"
+          ><input type="radio" name="membership" value="membership" checked />NP
+          Membership</label
+        >
+        <label class="bronze member"
+          ><input type="radio" name="membership" value="membership" />Bronze
+          Membership</label
+        >
+        <label class="silver member"
+          ><input type="radio" name="membership" value="membership" />Silver
+          Membership</label
+        >
+        <label class="gold member"
+          ><input type="radio" name="membership" value="membership" />Gold
+          Membership</label
+        >
+        <label for="description">Description: </label>
+        <textarea name="description" id="description"></textarea>
+        <input type="hidden" name="timestamp" value="" id="timestamp" />
+        <input type="submit" name="submit" id="submit" value="Join Chamber" />
+      </form>
+      <dialog id="myDialog"></dialog>
+      <div class="event-box-logo">
+        <div class="event" id="business">
+          <div class="spotlightHead"><h1>Spotlight</h1></div>
         </div>
       </div>
     </main>
@@ -151,20 +191,23 @@
           <div class="order">
             <div class="order-icons">
               <ul>
-                <li >
-                 <a href="https://whatsapp.com">
+                <li>
+                  <a href="https://whatsapp.com">
                     <i id="whatsapp" class="bx bxl-whatsapp-square"></i>
-                  </a><p>Whatsapp</p>
+                  </a>
+                  <p>Whatsapp</p>
                 </li>
-                <li >
-                 <a href="https://twitter.com"
+                <li>
+                  <a href="https://twitter.com"
                     ><i id="twitter" class="bx bxl-twitter"></i
-                  ></a><p>Twitter</p>
+                  ></a>
+                  <p>Twitter</p>
                 </li>
-                <li >
+                <li>
                   <a href="https://instagram.com">
                     <i id="insta" class="bx bxl-instagram-alt"></i>
-                  </a><p>Instagram</p>
+                  </a>
+                  <p>Instagram</p>
                 </li>
               </ul>
             </div>

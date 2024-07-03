@@ -28,7 +28,7 @@
         "address" : "110N. Carpenter St, Chicago, AU 220432",
         "phone" : "212-542-000-3432",
         "website": "www.mcdonalds.com",
-        "image" : "./images/McDonald's_Golden_Arches.svg.png",
+        "image" : "./images/McDonald's-Logo.wine.svg",
         "membershipLevel" : "gold",
         "industry" : "Resturants",
         "description" : "A leading company In Resturants Industry"
@@ -40,7 +40,7 @@
         "phone" : "345-942-434-9900",
         "website": "www.visainc.com",
         "image" : "./images/visa.jpeg",
-        "membershipLevel" : "platinum",
+        "membershipLevel" : "silver",
         "industry" : "Finance",
         "description" : "A leading company In Finance Sectors"
     },
@@ -73,7 +73,7 @@
         "phone" : "651-733-1110",
         "website": "www.3m.com",
         "image" : "./images/3M.jpeg",
-        "membershipLevel" : "platinum",
+        "membershipLevel" : "gold",
         "industry" : "Manufacturing",
         "description" : "A Renowened company Kown For High Quality Products"
     }

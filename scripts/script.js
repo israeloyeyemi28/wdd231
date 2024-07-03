@@ -150,7 +150,6 @@ const courseDetails = document.getElementById("course-details");
 function displayModal(course) {
   courseDetails.innerHTML = "";
   courseDetails.innerHTML = `
-  <div class="modal-border">
   <button id="closeModal">X</button>
   <h2>${course.subject}  ${course.number}</h2>
   </div>
