@@ -38,8 +38,8 @@ const settings = {
   minute: "numeric",
   second: "numeric",
   hour12: "false",
-  // timeZone: "Nigeria/Lagos",
-  // timeZoneName: "short",
+  timeZone: "Nigeria/Lagos",
+  timeZoneName: "short",
 };
 const showTime = now.toLocaleString("en-US", settings);
 timeStampVal.innerHTML = `<p>Timestamp: ${showTime}</p>`;
