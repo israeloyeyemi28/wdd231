@@ -10,7 +10,7 @@
   <meta property="og:title" content="BizBoost Chamber of Commerce(WDD231 Class Project)"/>
   <meta property="og:image" content="https://images.app.goo.gl/FUQnsSLA61oo7TYE8"/>
   <meta property="og:description" content="Bringing People Together For Business"/>
-  <meta property="og:url" content="israeloyeyemi28.github.io/wdd231/chamber/"/>
+  <meta property="og:url" content="https://israeloyeyemi28.github.io/wdd231/chamber/"/>
   <meta property="og:type" content="website"/>
   <meta property="og:locale" content="en_US.utf-8"/>
   <meta property="og:site_name" content="BizBoost Site"/>
@@ -20,10 +20,11 @@
   <meta property="twitter:description"
     content="his website will serve as a resource hub for businesses all over the world. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses."/>
   <meta property="twitter:image" content="https://images.app.goo.gl/FUQnsSLA61oo7TYE8"/>
-  <meta property="twitter:url" content="israeloyeyemi28.github.io/wdd231/chamber"/>
+  <meta property="twitter:url" content="https://israeloyeyemi28.github.io/wdd231/chamber"/>
   <link rel="icon" href="images/my-avatar.png" type="image/x-icon"/>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="styles/normalize.css"/>
+  <link rel="stylesheet" href="styles/form.css">
   <link rel="stylesheet" href="styles/style.css"/>
   <script src="scripts/join.js" defer></script>
   <title>BizBoost Chamber OF Commerce - Israel O. Oyedepo</title>
@@ -32,7 +33,7 @@
 <body>
   <header>
     <div class="head-div">
-      <img src="images/my-avatar.png" alt="FreshCleaners Logo" loading="lazy" class="logo"/>
+      <img src="images/my-avatar.png" alt="FreshCleaners Logo" class="logo"/>
       <h1 class="head-txt">Biz<span class="boost">Boost</span></h1>
       <p class="h1-sub">Chamber Of Commerce</p>
     </div>
@@ -64,8 +65,8 @@
         <input type="text" name="first" required autocomplete="first name" title="Your First Name"/></label>
       <label>Last Name
         <input type="text" name="last" required autocomplete="last name" title="Your Last Name"/></label>
-      <label>Organization Title<input type="text" name="organization-title" required autocomplete="organizational title"
-          minlength="7" title="organization-title"/></label>
+      <label>Organization Title<input type="text" name="organization-title" required autocomplete="organizational-title"
+          pattern="[a-zA-Z\- ]{7,}" title="organization-title"/></label>
       <label>Email
         <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
           autocomplete="email"/></label>
@@ -81,7 +82,7 @@
         Membership</label>
       <label class="gold-member"><input type="radio" name="membership" value="Gold Membership"/>Gold
         Membership</label>
-      <label for="description">Description: </label>
+      <label for="description">Description<span>(optional)</span>: </label>
       <textarea name="description" id="description"></textarea>
       <input type="hidden" name="timestamp" id="timestamp"/>
       <input type="submit" name="submit" id="submit" value="Join Chamber"/>
