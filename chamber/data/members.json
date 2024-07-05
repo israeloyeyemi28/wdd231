@@ -8,8 +8,7 @@
         "website": "www.microsoft.com",
         "image" : "./images/microsoft.png",
         "membershipLevel" : "gold",
-        "industry" : "Technology",
-        "description" : "A leading company In Tech Industry"
+        "industry" : "Technology"
     },
     {
         "company" : "Coca-Cola company",
@@ -19,8 +18,7 @@
         "website": "www.cocacola.com",
         "image" : "./images/coke.png",
         "membershipLevel" : "silver",
-        "industry" : "Beverages",
-        "description" : "A leading company In Beverage Industry"
+        "industry" : "Beverages"
     },
     {
         "company" : "McDonalds' Cooporation",
@@ -30,8 +28,7 @@
         "website": "www.mcdonalds.com",
         "image" : "./images/McDonald's-Logo.wine.svg",
         "membershipLevel" : "gold",
-        "industry" : "Resturants",
-        "description" : "A leading company In Resturants Industry"
+        "industry" : "Resturants"
     },
     {
         "company" : "Visa Inc",
@@ -41,8 +38,7 @@
         "website": "www.visainc.com",
         "image" : "./images/visa.jpeg",
         "membershipLevel" : "silver",
-        "industry" : "Finance",
-        "description" : "A leading company In Finance Sectors"
+        "industry" : "Finance"
     },
     {
         "company" : "Toyota Corporation",
@@ -52,8 +48,7 @@
         "website": "www.toyota.inc",
         "image" : "./images/toyota.jpeg",
         "membershipLevel" : "gold",
-        "industry" : "Technology",
-        "description" : "A leading company In Automobile Industry"
+        "industry" : "Technology"
     },
     {
         "company" : "United Airlines Holdings",
@@ -63,8 +58,7 @@
         "website": "www.unitedholdings.com",
         "image" : "./images/United_Airlines.jpeg",
         "membershipLevel" : "silver",
-        "industry" : "Aviation",
-        "description" : "A leading company In Aviation Sectors"
+        "industry" : "Aviation"
     },
     {
         "company" : "3M company",
@@ -74,8 +68,7 @@
         "website": "www.3m.com",
         "image" : "./images/3M.jpeg",
         "membershipLevel" : "gold",
-        "industry" : "Manufacturing",
-        "description" : "A Renowened company Kown For High Quality Products"
+        "industry" : "Manufacturing"
     }
     ]
 }

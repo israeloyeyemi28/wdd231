@@ -22,7 +22,6 @@ hamBurgerElement.addEventListener("click", () => {
   hamBurgerElement.classList.toggle("open");
 });
 // WEATHER API PART
-// select HTML elements in the document
 const currentTemp = document.querySelector(".current-temp");
 const weatherIcon = document.querySelector(".weather-icon");
 const description = document.querySelector(".description");
@@ -36,10 +35,7 @@ const wind = document.querySelector(".wind");
 const forecastDiv = document.getElementById("forecast");
 let lat = 6.6;
 let lon = 2.93;
-// 6.415
 let apiKey = "c4e920fb56bf3504b04364c64c177fb7";
-// let forecastKey = "d02d603052c5fe03cb030b6ee2a49c00";
-// 2.89
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
 async function apiFetch(url, displayFunction) {
@@ -47,7 +43,6 @@ async function apiFetch(url, displayFunction) {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      // console.log(data);
       displayFunction(data);
     } else {
       throw Error(await response.text());
@@ -56,7 +51,6 @@ async function apiFetch(url, displayFunction) {
     console.log(error);
   }
 }
-// apiFetch();
 function displayResults(data) {
   currentTemp.textContent = `${Math.round(data.main.temp)}°C`;
   const iconSRC = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
@@ -90,10 +84,8 @@ function displayResults(data) {
   const sunsetDate = new Date(sunsetTimestamp * 1000);
   const setTime = sunsetDate.toLocaleTimeString();
   sunset.innerHTML = setTime;
-  // console.log(data);
 }
 function displayForecast(data) {
-  // console.table(data);
   const todayTemp = document.createElement("p");
   const tomorrowTemp = document.createElement("p");
   const nextTemp = document.createElement("p");
@@ -123,7 +115,6 @@ function displayForecast(data) {
 }
 apiFetch(weatherUrl, displayResults);
 apiFetch(forecastUrl, displayForecast);
-//Member logos
 const cards = document.getElementById("business");
 const fileName = "data/members.json";
 // FETCH MEMBERS
@@ -158,7 +149,6 @@ function shuffleArray(array) {
 function displayMembers(members) {
   members.forEach((member) => {
     let link = document.createElement("a");
-    // let logo = document.createElement("img")
     link.innerHTML = `Link: <a style="text-decoration: underline">${member.website}</a>`;
     link.className = "logoLink";
     let image = document.createElement("img");

@@ -386,7 +386,6 @@ i {
   width: 80px;
   height: 80px;
   color: var(--clr);
-  /* line-height: 60px; */
   border-radius: 12px;
   padding: 2rem;
 }
@@ -496,7 +495,6 @@ hr {
   display: grid;
   grid-template-columns: auto;
   place-items: center;
-  /* padding: 2rem; */
 }
 .spotlightHead {
   background-color: #030429;
@@ -536,17 +534,6 @@ form {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin: 20px;
-  }
-  /* textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    position: absolute;
-    left: 30px;
-  } */
-  h2 {
-    margin: 1.5rem 0 0.2rem 0;
-    border-bottom: 1px solid #eee;
   }
 #results{
   padding: 1rem;
