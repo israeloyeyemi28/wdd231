@@ -77,7 +77,7 @@ h2 {
 }
 header {
   background-color: #062349;
-  /* padding: 1rem; */
+
   width: auto;
 }
 .head-div {
@@ -142,20 +142,10 @@ button {
 button:hover {
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.7));
 }
-/* Image background for the em img */
-.chamber-img {
-  padding: 4rem;
-  background-repeat: no-repeat;
-  margin: 0 auto;
+ .chamber-img img{
   width: 100%;
-  background-image: url(../images/hero-large.webp);
-  background-position: center;
-  scroll-behavior: smooth;
-  color: #000;
-  background-position: center;
-  background-size: cover;
-  background-size: calc(100% + 10rem);
-}
+  height: 100%;
+ }
 img.card-logo {
   width: 70px;
   height: 75px;
@@ -181,23 +171,10 @@ main {
   text-align: center;
 }
 .tickets {
-  position: absolute;
-  right: 30px;
   color: #000;
   background-color: #fff;
   border-radius: 10px;
   padding: 1.4rem;
-}
-#mypopover {
-  position: absolute;
-  top: 13rem;
-  left: 10rem;
-  padding: 3rem 2rem;
-  text-align: center;
-  border-radius: 10px;
-  color: black;
-  font-size: 1.25rem;
-  background: linear-gradient(gray, white);
 }
 .btnBox {
   display: block;
@@ -247,7 +224,7 @@ section h3 {
   font-size: 1.25rem;
   padding: 0.5rem;
 }
-img {
+section img {
   width: 200px;
   height: auto;
   border-radius: 50%;
@@ -401,7 +378,6 @@ i {
   align-items: center;
   justify-content: center;
 }
-
 /* END OF ICONS!!!!!! */
 footer p {
   margin: 0 auto;
@@ -512,7 +488,6 @@ hr {
 #forecast > p {
   margin: 20px;
 }
-/* JOIN HTML */
 /* Form start */
 form {
   margin: 1rem 2%;
@@ -579,6 +554,119 @@ form {
   align-items: center;
   flex-direction: column;
   font-size: 1.5rem;
+}
+.image-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px;
+}
+.image-div img{
+  width: 250px;
+  height: auto;
+}
+.activity-txt{
+  background-color: #301e97;
+  color: #fff;
+  padding: 15px;
+  text-align: left;
+  margin: 15px;
+  line-height: 1.5rem;
+}
+.activity-txt img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+}
+.activity-txt p{
+  margin-bottom: 10px;
+}
+.activity-txt p::first-letter{
+  font-size: 1.5rem;
+}
+.activity-txt img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.facts{
+  color: #961f1f;
+  background-color: #fff;
+  margin: 15px;
+  padding: 18px;
+}
+.facts hr{
+  background-color: #961f1f;
+}
+.facts-div{
+  display: flex;
+  justify-content: space-around;
+}
+.activity-img img{
+  width: 400px;
+  height: 300px; 
+}
+.upcoming-events{
+  background-color: #fff;
+  padding: 10px 15px 0 15px;
+  margin: 25px;
+  border-radius: 5.5px;
+  box-shadow: 2.5px 2.5px 3px #131212;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.upcoming-events h2{
+  font-weight: 700;
+}
+.upcoming-events h3{
+  font-size: medium;
+}
+.upcoming-events:nth-child(odd){
+  transform: rotate(1.25deg);
+  background-color: yellow;
+}
+.upcoming-events:nth-child(even){
+  transform: rotate(-1deg);
+  background-color: brown;
+  color: #fff;
+}
+.stay{
+  background-color: green;
+  box-shadow: 2.5px 2.5px 3px #131212;
+}
+.shop{
+  background-color: blue;
+  box-shadow: 2.5px 2.5px 3px #131212;
+}
+.dine{
+  background-color: navy;
+  box-shadow: 2.5px 2.5px 3px #131212;
+}
+.relocate{
+  background-color: #a81313;
+  box-shadow: 2.5px 2.5px 3px #131212;
+}
+.new-logos{
+  border: solid blue 1px;
+  border: none;
+  box-shadow: 2.5px 2.5px 3px #131212;
+}
+.new-members{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.new-members img{
+  width: 70px;
+  height: 55px;
+  margin: 0 10px 10px 0;
+}
+figcaption{
+  background-color: #ffffff;
 }
 @media screen and (min-width: 37.5em) {
   #myButton {
@@ -667,5 +755,15 @@ form {
     padding: 20px;
     margin-left: 30px;
   }
-  
+  .image-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .activity-img{
+    padding: 10px;
+  }
+  .activity-img img{
+    width: 450px;
+    height: 300px;
+  }
 }
