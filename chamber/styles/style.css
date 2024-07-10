@@ -561,6 +561,10 @@ form {
   justify-content: center;
   margin: 0 20px;
 }
+#visits{
+  background-color: hwb(0 0% 100%);
+  padding: 10px;
+}
 .image-div img{
   width: 250px;
   height: auto;
@@ -766,4 +770,6 @@ figcaption{
     width: 450px;
     height: 300px;
   }
+  .activity-img img:hover {box-shadow: 0 0 50px #333;}
+
 }
