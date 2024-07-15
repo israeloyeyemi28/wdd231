@@ -5,11 +5,11 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #11b611;
-  --secondary-color: #fff;
-  --accent1-color: #032b44;
-  --accent2-color: #b4b0b0;
-  --accent3-color: #000;
+  --primary-color: #062349;
+  --secondary-color: yellow;
+  --accent1-color: #7ebdff;
+  --accent2-color: #14417c;
+  --accent3-color: #050777;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Rock Salt";
@@ -22,9 +22,9 @@ Fonts are separated by a & */
   --paragraph-color-on-color: #fff; /* paragraph text on a colored background */
   --paragraph-background-color: #0805ac;
   --nav-link-color: #fff;
-  --nav-hover-background-color: #11b611;
+  --nav-hover-background-color: #14417c;
   --nav-background-color: #0805ac;
-  --nav-hover-link-color: #000;
+  --nav-hover-link-color: #fff;
 }
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
@@ -120,6 +120,7 @@ nav {
 nav {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
 }
 nav a {
   padding: 1em;

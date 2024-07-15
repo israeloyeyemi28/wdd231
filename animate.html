@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: black;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        main{
+            width: 100%;
+        }
+        section {
+            width: 100vw;
+            margin: 5rem;
+            padding: 3rem;
+            text-align: center;
+        }
+        .hidden{
+            opacity: 0;
+            transition: all 2s;
+            filter: blur(5px);
+            transform: translateX(-100%);
+        }
+        .show{
+            opacity: 1;
+            transform: translateX(0);
+            filter: blur(0);
+        }
+       
+    </style>
+    <main>
+        <section class="hidden">
+            <h1>nsdjn</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita dolore numquam odio temporibus
+                pariatur, odit esse optio non laudantium, et incidunt quaerat.</p>
+        </section>
+        <section class="hidden">
+            <h1>nsdjn</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quas.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus animi quam minus. Sunt, recusandae nemo libero sint excepturi necessitatibus quos, cupiditate officia, dolorem error natus eaque assumenda labore at molestiae illum. Eligendi deserunt recusandae explicabo, itaque eos porro eum iusto ducimus hic odit delectus, quibusdam pariatur quod ea ullam perferendis beatae. Libero eveniet explicabo eligendi.</p>
+        </section>
+        <section class="hidden">
+            <h1>nsdjn</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptates tempora ea at illum. Tempore eveniet voluptates ducimus eius vero temporibus. Laborum molestias velit dolores vero aliquid dolorum a maiores?</p>
+        </section>
+        <section class="hidden">
+            <h1>nsdjn</h1>
+        </section>
+    </main>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show");
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll(".hidden");
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+
+</html>

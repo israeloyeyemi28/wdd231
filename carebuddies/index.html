@@ -22,6 +22,7 @@
     <meta property="twitter:url" content="israeloyeyemi28.github.io/wdd231/carebuddies"/>
     <link rel="shortcut icon" href="images/carebuddies.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
+    <!-- <link rel="stylesheet" href="../normalize.css"> -->
     <script src="script/main.js" defer></script>
     <title>CareBuddies</title>
 </head>
@@ -39,9 +40,9 @@
     <li>
       <a href="index.html" title="Home-Page" class="active" id="home">Home</a>
     </li>
-    <li><a href="carebuddy.html" title="Book a Carebuddy" id="book-now">carebuddies</a></li>
+    <li><a href="carebuddy.html" title="Carebuddies" id="book-now">Sitters</a></li>
     <li>
-      <a href="about.html" title="About us" id="about">About-Us</a>
+      <a href="about.html" title="Book a Carebuddy" id="about">Bookings</a>
     </li>
     <li><a href="contact.html" title="Contact-Us" id="contact">Contact</a></li>
   </ul>
@@ -51,16 +52,136 @@
         <div class="hero-div">
             <div class="hero-div-img">
                 <h1 class="hero-h1">Ready to take that dream vacation? Who's watching the kids?</h1>
-                <p class="hero-p">We've got you covered! Book a trusted Carebuddy today and start packing your bags!</p>
             </div>
-            <button class="book-now">Book a Carebuddy Now!</button>
+            <button class="more">Book a Carebuddy Now!</button>
         </div>
-        <div class="welcome">
-            <h2>Welcome to Carebuddies, your go-to platform for reliable and compassionate babysitting services. Our mission is to provide top-notch care for your children, giving you peace of mind and a well-deserved break.</h2>
+        <div class="welcome div" >
+            <h2>Welcome to Carebuddies, your go-to platform for reliable and compassionate babysitting services. Our mission is to provide top-notch care for your children, giving you peace of mind and a well-deserved break, and the freedom to pursue your dreams</h2>
             <img src="images/round_bby.png" alt="baby-img" class="welcome-img">
+            <button class="more">Learn More</button>
+
+        </div>
+        <div class="rental div">
+            <div class="rental-box">
+            <h1>Rental Information</h1>
+            </div>
+            <div class="rental-info">
+                <h2>Types Of Sitters</h2>
+                <ul>
+                    <li>Infant Sitters (0 - 2 years)</li>
+                    <li>Toddler Sitters (2 - 4 years)</li>
+                    <li>Child Sitters (4 - 11 years)</li>
+                    <li>Elderly Sitters (Grandpa's & Grandma's)</li>
+                </ul>
+            </div>
+            <div class="rental-box">
+                <h1>Pricing</h1>
+            </div>
+            <div class="rental-info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Max. Children</th>
+                            <th>1/2 Day (4 Hrs)</th>
+                            <th>1 Day(8 Hrs)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Infant</th>
+                            <td>2</td>
+                            <td>$25</td>
+                            <td>$35</td>
+                        </tr>
+                        <tr>
+                        <th>Toddler</th>
+                        <td>6</td>
+                        <td>$35</td>
+                        <td>$45</td>
+                        </tr>
+                        <tr>
+                            <th>Child</th>
+                            <td>4</td>
+                            <td>$50</td>
+                            <td>$60</td>
+                        </tr>
+                        <tr>
+                            <td>Elderly</td>
+                            <td>1</td>
+                            <td>$75</td>
+                            <td>$100</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+        <div class="offer">
+            <h1>What We Offer</h1>
+            <div class="offer-box">
+                <div class="offer-img">
+                    <img src="images/photo-1516627145497-ae6968895b74.jpeg" class="offer-img" alt="baby image">
+                </div>
+            <ul>
+                <li>Trustworthy and background-checked babysitters.</li>
+                <li>Personalized care for children of all ages.</li>
+                <li>Flexible scheduling to suit your needs.</li>
+                <li>Engaging activities and playtime</li>
+                <li>Homework help and tutoring available</li>
+                <li>Safe and secure booking process</li>
+            </ul>
+            <button class="more">View Sitters </button>
+
+            </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-con">
+            <div class="footer-div">
+                <p>Carebuddies</p>
+                <p>10, Raphael Street, Victor Close</p>
+                <p>Wuse, Abuja, Nigeria</p>
+                <p><a href="index.html">info@babysitters.com</a></p>
+                <p>+234 788 572 2132</p>
+            </div>
+            <div class="footer-div" id="icon-div">
+                <div class="order">
+                    <div class="order-icons">
+                        <ul>
+                            <li>
+                                <a href="https://whatsapp.com">
+                                    <i id="whatsapp" class="bx bxl-whatsapp-square"></i>
+                                </a>
+                                <p>Whatsapp</p>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com"><i id="twitter" class="bx bxl-twitter"></i></a>
+                                <p>Twitter</p>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com">
+                                    <i id="insta" class="bx bxl-instagram-alt"></i>
+                                </a>
+                                <p>Instagram</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-div">
+                <p>WDD 231 Class Project</p>
+                <p>Israel Oyeyemi</p>
+                <div id="currentyear">
+                    <p>
+                        &copy;<span id="year"> </span> BizBoost Chamber Of Commerce
+                        Nigeria
+                    </p>
+                </div>
+                <div class="footer-txt"><span id="lastModified"></span></div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
