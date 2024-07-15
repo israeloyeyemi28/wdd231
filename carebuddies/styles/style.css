@@ -1,49 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
+:root{
+    --paragraph-font: font-family: "Merriweather", serif;
+    --heading-font: font-family: "Poppins", sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--paragraph-font);
 }
-header{
-    background-color: #1a8000;
+header {
+  background-color: #1a8000;
+  font-family: var(--heading-font);
+  font-weight: 400;
 }
-.head-div{
-    display: flex;
-    padding: 1rem;
+.head-div {
+  display: flex;
+  padding: 1rem;
 }
-.logo-img{
-    width: 75px;
-    padding: .5rem;
+.logo-img {
+  width: 75px;
+  padding: 0.5rem .75rem .5rem 0rem;
 }
-.care{
-    margin-top: 10px;
-    color: #7ebdff;
-    font-size: 1.5rem;
+.care {
+  margin-top: 10px;
+  color: #7ebdff;
+  font-size: 1.5rem;
 }
-.buddies{
-    color: #ffffff;
+.buddies {
+  color: #ffffff;
 }
 .h1-sub {
   position: absolute;
   top: 50px;
-  left: 95px;
+  left: 85px;
   color: #fff;
 }
 nav {
-  background-color: #000000;
+  background-color: #499642;
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.5s ease-out;
-  color: #fff;
+  color: #000000;
 }
 nav a {
   text-align: center;
+  color: #000000;
   text-decoration: none;
-  margin: 1rem;
+  margin: .5rem;
   display: flex;
   justify-content: center;
   padding: 1rem;
-  color: #5dff8e;
   cursor: pointer;
   font-weight: 700;
 }
@@ -84,4 +91,45 @@ button {
 ul li {
   list-style-type: none;
   padding: 1.05rem;
+}
+.hero-div {
+  padding: 0rem 2rem;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 100%;
+  height: 65vh;
+  background-image: url(../images/Free-Photo-740x492-2058274222.jpg);
+  background-size: calc(100% + 10rem);
+}
+.hero-div-img{
+    display: flex;
+    flex-direction: column;
+}
+.hero-h1{
+    color: #ff0000;
+    font-size: 2rem;
+}
+.hero-p{
+    font-size: 1.5rem;
+    color: #c94040;
+    font-weight: 700;
+}
+.book-now{
+    background-color: yellow;
+    padding: 12px;
+    width: 170px;
+    border-radius: 10px;
+    border: 1px solid ;
+    margin: 1rem auto;
+}
+.welcome{
+    padding: .5rem 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.welcome-img{
+    width: 50vw;
+    display: flex;
+    margin: 0 auto;
 }
