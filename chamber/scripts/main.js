@@ -44,6 +44,8 @@ async function apiFetch(url, displayFunction) {
     if (response.ok) {
       const data = await response.json();
       displayFunction(data);
+        console.table(data);
+
     } else {
       throw Error(await response.text());
     }
@@ -162,4 +164,3 @@ function displayMembers(members) {
     cards.appendChild(link);
   });
 }
-

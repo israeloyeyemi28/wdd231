@@ -22,7 +22,7 @@
     <meta property="twitter:url" content="israeloyeyemi28.github.io/wdd231/carebuddies"/>
     <link rel="shortcut icon" href="images/carebuddies.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
-    <!-- <link rel="stylesheet" href="../normalize.css"> -->
+    <link rel="stylesheet" href="../normalize.css">
     <script src="script/main.js" defer></script>
     <title>CareBuddies</title>
 </head>
@@ -40,9 +40,9 @@
     <li>
       <a href="index.html" title="Home-Page" class="active" id="home">Home</a>
     </li>
-    <li><a href="carebuddy.html" title="Carebuddies" id="book-now">Sitters</a></li>
+    <li><a href="sitters.html" title="Carebuddies" id="book-now">Sitters</a></li>
     <li>
-      <a href="about.html" title="Book a Carebuddy" id="about">Bookings</a>
+      <a href="bookings.html" title="Book a Carebuddy" id="about">Bookings</a>
     </li>
     <li><a href="contact.html" title="Contact-Us" id="contact">Contact</a></li>
   </ul>
@@ -52,16 +52,15 @@
         <div class="hero-div">
             <div class="hero-div-img">
                 <h1 class="hero-h1">Ready to take that dream vacation? Who's watching the kids?</h1>
+                <button class="more">Book a Carebuddy Now!</button>
             </div>
-            <button class="more">Book a Carebuddy Now!</button>
         </div>
-        <div class="welcome div" >
+        <div class="welcome" >
             <h2>Welcome to Carebuddies, your go-to platform for reliable and compassionate babysitting services. Our mission is to provide top-notch care for your children, giving you peace of mind and a well-deserved break, and the freedom to pursue your dreams</h2>
             <img src="images/round_bby.png" alt="baby-img" loading="lazy" class="welcome-img">
-            <button class="more">Learn More</button>
-
+            <button id="learn-more" class="more">Learn More</button>
         </div>
-        <div class="rental div">
+        <div class="rental">
             <div class="rental-box">
             <h1>Rental Information</h1>
             </div>
@@ -114,14 +113,13 @@
                         </tr>
                     </tbody>
                 </table>
-                
             </div>
         </div>
         <div class="offer">
             <h1>What We Offer</h1>
             <div class="offer-box">
                 <div class="offer-img">
-                    <img src="images/photo-1516627145497-ae6968895b74.jpeg" loading="lazy" class="offer-img" alt="baby image">
+                    <img src="images/camera.jpeg" loading="lazy" class="offer-img" alt="baby image">
                 </div>
             <ul>
                 <li>Trustworthy and background-checked babysitters.</li>
@@ -131,15 +129,35 @@
                 <li>Homework help and tutoring available</li>
                 <li>Safe and secure booking process</li>
             </ul>
-            <button class="more">View Sitters </button>
+            <button class="more">Book Now</button>
 
             </div>
+        </div>
+        <div class="test">
+            <div class="test-box">
+                <h2>Don't Just take our word for it! Hear from satisfied parents who have used our services:</h2>
+            </div>
+                <div class="test-info">
+                    <p>The Carebuddies team is amazing! They took great care of my kidds and made me feel comfortable leaving them in their hands. - <strong>Sarah P.</strong></p>
+                    <img src="images/testimonial-2.png" alt="Sarah P Image" class="test-img">
+                </div>
+                <div class="test-info">
+                    <p>I was impressed with the sitter's qualifications and experience. They're the best! - <strong>John D</strong></p>
+                    <img src="images/testimonial-1.png" alt="Sarah P Image" class="test-img">
+                </div>
+                <div class="test-info">
+                    <p>Carebuddies really care! They took great care of my me while I was ill.  - <strong>Joshua A.</strong></p>
+                    <img src="images/testimonial-3.png" alt="Sarah P Image" class="test-img">
+                </div>
+                <div class="test-info-last">
+                <button class="more">Get a Buddy Now!</button>
+                </div>
         </div>
     </main>
     <footer>
         <div class="footer-con">
             <div class="footer-div">
-                <p>Carebuddies</p>
+                <p>Carebuddies Babysitting Service</p>
                 <p>10, Raphael Street, Victor Close</p>
                 <p>Wuse, Abuja, Nigeria</p>
                 <p><a href="index.html">info@babysitters.com</a></p>
@@ -150,17 +168,17 @@
                     <div class="order-icons">
                         <ul>
                             <li>
-                                <a href="https://whatsapp.com">
+                                <a href="https://w.w.w.whatsapp.com">
                                     <i id="whatsapp" class="bx bxl-whatsapp-square"></i>
                                 </a>
                                 <p>Whatsapp</p>
                             </li>
                             <li>
-                                <a href="https://twitter.com"><i id="twitter" class="bx bxl-twitter"></i></a>
+                                <a href="https://w.w.w.twitter.com"><i id="twitter" class="bx bxl-twitter"></i></a>
                                 <p>Twitter</p>
                             </li>
                             <li>
-                                <a href="https://instagram.com">
+                                <a href="https://w.w.w.instagram.com">
                                     <i id="insta" class="bx bxl-instagram-alt"></i>
                                 </a>
                                 <p>Instagram</p>
@@ -170,11 +188,11 @@
                 </div>
             </div>
             <div class="footer-div">
-                <p>WDD 231 Class Project</p>
-                <p>Israel Oyeyemi</p>
+                <p>CareBuddies Babysitting Service</p>
+                <p>Your Priority, Our care</p>
                 <div id="currentyear">
                     <p>
-                        &copy;<span id="year"> </span> BizBoost Chamber Of Commerce
+                        &copy;<span id="year"> </span> CareBuddies,
                         Nigeria
                     </p>
                 </div>

@@ -1,0 +1,84 @@
+{
+    "carebuddies": [
+        {
+        "name" : "Josh carter",
+        "address" : "One Festact Way, Redmond, WA 98094",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/testimonial-3.png",
+        "Type" : "Infants",
+        "skills" : "Cooking, Playing, Singing Lulabys"
+    },
+        {
+        "name" : "Micheal Anderson",
+        "address" : "One Festact Way, Redmond, WA 98094",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/testimonial-1.png",
+        "Type" : "Toddlers",
+        "skills" : "Cooking, Playing, Singing Lulabys"
+    },
+        {
+        "name" : "Mercy Richardson",
+        "address" : "One Festact Way, Redmond, WA 98094",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/testimonial-2.png",
+        "Type" : "Toddlers",
+        "skills" : "Cooking, Playing, Singing Lulabys"
+    },
+        {
+        "name" : "Gabriel Matinelli",
+        "address" : "One Festact Way, Redmond, WA 98094",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/testimonial-1.png",
+        "Type" : "Toddlers",
+        "skills" : "Cooking, Playing, Singing Lulabys"
+    },
+        {
+        "name" : "Julios Eustebio",
+        "address" : "One Festact Way, Redmond, WA 98094",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/testimonial-3.png",
+        "Type" : "Adults",
+        "skills" : "Cooking, Playing, Singing Lulabys"
+    },
+        {
+        "name" : "Sam Samson",
+        "address" : "One Festact Way, Redmond, WA 98094",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/testimonial-1.png",
+        "Type" : "Toddlers",
+        "skills" : "Cooking, Playing, Singing Lulabys"
+    },
+        {
+        "name" : "Peter Pius",
+        "address" : "One Festact Way, Redmond, WA 98094",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/testimonial-3.png",
+        "Type" : "Infants",
+        "skills" : "Cooking, Playing, Singing Lulabys"
+    },
+        {
+        "name" : "Martin Kristoff",
+        "address" : "One Festact Way, Redmond, WA 98094",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/testimonial-1.png",
+        "Type" : "Toddlers",
+        "skills" : "Cooking, Playing, Singing Lulabys"
+    },
+        {
+        "name" : "Sarah Lucy",
+        "address" : "5, redmond Ave. West 98094",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/testimonial-2.png",
+        "Type" : "Toddlers",
+        "skills" : "Cooking, Playing, Singing Lulabys"
+    },
+        {
+        "name" : "Anna Gabrielle",
+        "address" : "2 Micky street, badagry",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/testimonial-2.png",
+        "Type" : "Adults",
+        "skills" : "Cooking, Playing, Singing Lulabys"
+    }
+    ]
+}
