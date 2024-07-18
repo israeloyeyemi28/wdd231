@@ -4,29 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Israel Oyeyemi" />
-    <meta name="description" content="Your Care, Our Priority" />
-    <meta property="og:title" content="BizBoost Chamber of Commerce" />
-    <meta property="og:image" content="https://israeloyeyemi28.github.io/wdd231/carebuddies/images/round_bby" />
+    <meta name="author" content="Israel Oyeyemi"/>
+    <meta name="description" content="Your Care, Our Priority"/>
+    <meta property="og:title" content="BizBoost Chamber of Commerce"/>
+    <meta property="og:image" content="https://israeloyeyemi28.github.io/wdd231/carebuddies/images/round_bby"/>
     <meta property="og:description"
-        content="carebuddies is a fictitious baby sitting company located in Badagry Lagos. This owner-operator company caters to families, singles, and professionals seeking trustworthy and caring baby sitting services." />
-    <meta property="og:url" content="israeloyeyemi28.github.io/wdd231/carebuddies/index.html" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US.utf-8" />
-    <meta property="og:site_name" content="CareBuddies" />
-    <meta property="twitter:card" content="Summary_large_img" />
-    <meta property="twitter:site" content="@CareBuddies" />
-    <meta property="twitter:title" content="CareBuddies Babysitting Service" />
+        content="carebuddies is a fictitious baby sitting company located in Badagry Lagos. This owner-operator company caters to families, singles, and professionals seeking trustworthy and caring baby sitting services."/>
+    <meta property="og:url" content="israeloyeyemi28.github.io/wdd231/carebuddies/index.html"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US.utf-8"/>
+    <meta property="og:site_name" content="CareBuddies"/>
+    <meta property="twitter:card" content="Summary_large_img"/>
+    <meta property="twitter:site" content="@CareBuddies"/>
+    <meta property="twitter:title" content="CareBuddies Babysitting Service"/>
     <meta property="twitter:description"
         content="carebuddies is a fictitious baby sitting company located in Badagry Lagos. This owner-operator company caters to families, singles, and professionals seeking trustworthy and caring baby sitting services." />
     <meta property="twitter:image" content="https://israeloyeyemi28.github.io/wdd231/carebuddies/images/round_bby" />
     <meta property="twitter:url" content="israeloyeyemi28.github.io/wdd231/carebuddies" />
     <link rel="shortcut icon" href="images/carebuddies.png" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="../normalize.css">
-    <!-- <script src="script/api.js" defer></script> -->
     <script src="script/main.js" type="module" defer></script>
-    <!-- <script  src="script/weather.js" defer></script> -->
+    <script  src="script/weather.js" defer></script>
     <title>CareBuddies</title>
 </head>
 
@@ -43,7 +43,7 @@
                 <li>
                     <a href="index.html" title="Home-Page" id="home">Home</a>
                 </li>
-                <li><a href="sitters.html" title="Carebuddies" class="active"  id="book-now">Sitters</a></li>
+                <li><a href="sitters.html" title="Choose a Carebuddy" class="active"  id="book-now">Sitters</a></li>
                 <li>
                     <a href="bookings.html" title="Book a Carebuddy" id="about">Bookings</a>
                 </li>
@@ -58,8 +58,8 @@
             </div>
             <button class="more">Book a Carebuddy Now!</button>
         </div>
+        <span id="visits"></span>
             <div class="container-box">
-                <span id="visits"></span>
                 <div class="event-box">
                     <div class="title">
                         <h1>Current Weather</h1>
@@ -89,11 +89,79 @@
                     </div>
                 </div>
             </div>
-        <div class="grid"></div>
+            <h1 id="meet">Why Choose Us?</h1>
+            <hr>
+            <div class="choose">
+                <div class="choose-img">
+                    <img src="images/makeup.jpg" alt="Kid doing makeup">
+                </div>
+                <div class="choose-txt">
+                    <ul>
+                    <li>Trustworthy and background-checked babysitters.</li>
+                    <li>Personalized care for children of all ages.</li>
+                    <li>Flexible scheduling to suit your needs.</li>
+                    <li>Engaging activities and play time</li>
+                    <li>Homework and tutoring available</li>
+                    <li>Special delicacies for children</li>
+                    <li>Safe and secure location</li>
+                    </ul>
+                </div>
+                <button class="choose-btn">Book a Carebuddy Now!</button>
+            </div>
+            <h1 id="meet">Services:</h1>
+            <hr>
+            <div class="choose-txt">
+                <ul>
+                    <li>Childcare and companionship.</li>
+                    <li>Light housekeeping and meal preparation.</li>
+                    <li>Homework help and tutoring</li>
+                    <li>Errands and grocery shopping.</li>
+                    <li>Medication reminders and management.</li>
+                    <li>Engaging in activities and play.</li>
+                </ul>
+            </div>
+            <div class="rental">
+                <div class="rental-box">
+                    <h1>Pricing</h1>
+                </div>
+                <div class="rental-info">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Max. Children</th>
+                                <th>1 Day (4 Hrs)</th>
+                                <th>1 Day(8 Hrs)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Infant</th>
+                                <td>2</td>
+                                <td>$25</td>
+                                <td>$35</td>
+                            </tr>
+                            <tr>
+                                <th>Toddler</th>
+                                <td>6</td>
+                                <td>$35</td>
+                                <td>$45</td>
+                            </tr>
+                            <tr>
+                                <th>Child</th>
+                                <td>4</td>
+                                <td>$50</td>
+                                <td>$60</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <h1 id="meet">Meet Our CareBuddies!</h1>
+            <hr>
+            <div class="grid">
+            </div>
         <dialog id="modal" class="modal">
-            <!-- <h2 class="sitters-txt"></h2>
-            <div class="body"></div> -->
-            <button class="close-btn">&#x274C;</button>
         </dialog>
     </main>
     <footer>

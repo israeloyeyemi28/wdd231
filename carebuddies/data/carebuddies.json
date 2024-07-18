@@ -4,81 +4,112 @@
         "name" : "Josh carter",
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
-        "image" : "./images/testimonial-3.png",
+        "image" : "./images/josh.jpeg",
         "Type" : "Infants",
-        "skills" : "Cooking, Playing, Singing Lulabys"
+        "skills" : [
+            "Cooking","Baking Cookies","Reading Novels", "Playing", "Singing Lulabys"],
+        "dominant-color" : "#F0E5D3",
+        "color": "#000"
     },
         {
         "name" : "Micheal Anderson",
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
-        "image" : "./images/testimonial-1.png",
+        "image" : "./images/micheal.jpeg",
         "Type" : "Toddlers",
-        "skills" : "Cooking, Playing, Singing Lulabys"
+        "skills" : [
+            "Excersice","Outdoor Activities", "Playing","Video Games", "Singing Lulabys"],
+        "dominant-color" : "#4D4844",
+        "color": "#fff"
     },
         {
         "name" : "Mercy Richardson",
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
-        "image" : "./images/testimonial-2.png",
+        "image" : "./images/mercy_richardson.jpg",
         "Type" : "Toddlers",
-        "skills" : "Cooking, Playing, Singing Lulabys"
+        "skills" : [
+            "Cooking","Card Games","Nursery Rhymes", "Playing", "Number Games"],
+        "dominant-color" : "#FBD375",
+        "color": "#000"
+
     },
         {
-        "name" : "Gabriel Matinelli",
+        "name" : "Sophia Matinelli",
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
-        "image" : "./images/testimonial-1.png",
-        "Type" : "Toddlers",
-        "skills" : "Cooking, Playing, Singing Lulabys"
+        "image" : "./images/sophia.jpg",
+        "Type" : "Infants",
+        "skills" : [
+            "Cooking", "Playing", "Singing Lulabys","Outdoor Activities","Nursery Rhymes"],
+        "dominant-color" : "#A53F29",
+        "color": "#fff"
     },
         {
-        "name" : "Julios Eustebio",
+        "name" : "Rebecca Andrew",
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
-        "image" : "./images/testimonial-3.png",
-        "Type" : "Adults",
-        "skills" : "Cooking, Playing, Singing Lulabys"
+        "image" : "./images/rebecca.jpg",
+        "Type" : "Infants",
+        "skills" : [
+            "Cooking", "Playing", "Singing Lulabys","Number Games","Bed Tucking"],
+        "dominant-color": "#F8CB33",
+        "color": "#000"
     },
         {
         "name" : "Sam Samson",
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
-        "image" : "./images/testimonial-1.png",
+        "image" : "./images/sam_samson.webp",
         "Type" : "Toddlers",
-        "skills" : "Cooking, Playing, Singing Lulabys"
+        "skills" : [
+            "Cooking", "Teaching", "Singing", "Card Games", "Bed Tucking"],
+        "dominant-color": "#Fafafa",
+        "color": "#000"
     },
         {
-        "name" : "Peter Pius",
+        "name" : "Blessing Pius",
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
-        "image" : "./images/testimonial-3.png",
+        "image" : "./images/blessing.jpg",
         "Type" : "Infants",
-        "skills" : "Cooking, Playing, Singing Lulabys"
+        "skills" : [
+            "Cooking", "Playing", "Indoor Sports", "Baking", "Reading Novels"],
+        "dominant-color": "#DC926F",
+        "color": "#000"
     },
         {
-        "name" : "Martin Kristoff",
+        "name" : "Angella Kristoff",
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
-        "image" : "./images/testimonial-1.png",
+        "image" : "./images/angela.jpg",
         "Type" : "Toddlers",
-        "skills" : "Cooking, Playing, Singing Lulabys"
+        "skills" : [
+            "Cooking", "Playing", "Singing Lulabys"],
+        "dominant-color": "#Fafafa",
+        "color": "#000"
     },
         {
         "name" : "Sarah Lucy",
         "address" : "5, redmond Ave. West 98094",
         "phone" : "+345-542-085-3432",
-        "image" : "./images/testimonial-2.png",
+        "image" : "./images/sarah-lucy.jpg",
         "Type" : "Toddlers",
-        "skills" : "Cooking, Playing, Singing Lulabys"
+        "skills" : [
+            "Cooking", "Playing", "Singing Lulabys"],
+        "dominant-color": "#727888",
+        "color": "#000"
     },
         {
         "name" : "Anna Gabrielle",
         "address" : "2 Micky street, badagry",
         "phone" : "+345-542-085-3432",
-        "image" : "./images/testimonial-2.png",
-        "Type" : "Adults",
-        "skills" : "Cooking, Playing, Singing Lulabys"
+        "image" : "./images/anna.jpg",
+        "Type" : "Toddlers",
+        "skills" : [
+            "Cooking", "Playing", "Singing Lulabys"],
+        "dominant-color": "#Fabfbf",
+        "color": "#000"
     }
     ]
 }

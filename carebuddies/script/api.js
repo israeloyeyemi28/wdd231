@@ -6,7 +6,6 @@ export async function fetchSitters(url) {
     const response = await fetch(url);
     let data = await response.json();
     displaySitters(data);
-    console.table(data);
     return data;
   } catch (error) {
     console.error("Error fetching Sitters:", error);

@@ -20,4 +20,8 @@ export default function updatePageVisitsCount() {
     visitsDisplay.textContent = `Welcome! Let Us Know If You Have Any Questions.`;
   }
   localStorage.setItem("numDiscoverPage", new Date());
+  document.querySelector("#visits").style.display = "block";
+  setTimeout(() => {
+    visitsDisplay.style.display = "none";
+  }, 10000);
 }
