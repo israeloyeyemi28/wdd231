@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
 :root{
-    --paragraph-font: font-family: ;
-    --heading-font: font-family: ;
     --border-radius: 15px;
 }
 * {
