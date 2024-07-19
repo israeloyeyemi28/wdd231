@@ -18,19 +18,10 @@ hamBurgerElement.addEventListener("click", () => {
 // });
 // const hiddenElements = document.querySelector(".div");
 // hiddenElements.forEach((el) => observer.observe(el));
-// const cards = document.querySelector(".grid");
-// const url = "./data/carebuddies.json";
+
 const cards = document.querySelector(".grid");
 import updatePageVisitsCount from "../script/pageCount.js";
 import { fetchSitters } from "../script/api.js";
 const url = "./data/carebuddies.json";
 fetchSitters(url);
 updatePageVisitsCount();
-// const infant = document.querySelector(".infant");
-// const todd = document.querySelector(".todd");
-// const child = document.querySelector(".child");
-// const gold = document.querySelector(".gold-member");
-// const closeModal = document.querySelector(".close-btn");
-// const benefits = document.querySelector(".benefits");
-// const benefitsTxt = document.querySelector(".benefits-txt");
-

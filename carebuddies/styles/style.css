@@ -286,7 +286,7 @@ color: #fff;
   border-radius: var(--border-radius);
   box-shadow: 2px 2px 2px #767a83;
   width: 80vw;
-  height: auto;
+  height: 50vh;
 }
 .test{
   margin: 1.5rem;
@@ -333,6 +333,7 @@ color: #fff;
   align-items: center;
 }
 .test-img{
+
   border-radius: 50%;
   padding: 1rem;
 }
