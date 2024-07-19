@@ -4,7 +4,7 @@
         "name" : "Josh carter",
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
-        "image" : "./images/josh.jpeg",
+        "image" : "./images/Josh.jpeg",
         "Type" : "Infants",
         "skills" : [
             "Cooking","Baking Cookies","Reading Novels", "Playing", "Singing Lulabys"],
