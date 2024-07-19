@@ -16,7 +16,7 @@
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
         "image" : "./images/micheal.jpeg",
-        "Type" : "Toddlers",
+        "Type" : "Children",
         "skills" : [
             "Excersice","Outdoor Activities", "Playing","Video Games", "Singing Lulabys"],
         "dominant-color" : "#4D4844",
@@ -27,7 +27,7 @@
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
         "image" : "./images/mercy_richardson.jpg",
-        "Type" : "Toddlers",
+        "Type" : "Children",
         "skills" : [
             "Cooking","Card Games","Nursery Rhymes", "Playing", "Number Games"],
         "dominant-color" : "#FBD375",
@@ -61,7 +61,7 @@
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
         "image" : "./images/sam_samson.webp",
-        "Type" : "Toddlers",
+        "Type" : "Children",
         "skills" : [
             "Cooking", "Teaching", "Singing", "Card Games", "Bed Tucking"],
         "dominant-color": "#Fafafa",
@@ -83,7 +83,7 @@
         "address" : "One Festact Way, Redmond, WA 98094",
         "phone" : "+345-542-085-3432",
         "image" : "./images/angela.jpg",
-        "Type" : "Toddlers",
+        "Type" : "Children",
         "skills" : [
             "Cooking", "Playing","Number Games","Nursery Rhymes"],
         "dominant-color": "#Fafafa",
@@ -94,7 +94,7 @@
         "address" : "5, redmond Ave. West 98094",
         "phone" : "+345-542-085-3432",
         "image" : "./images/sarah-lucy.jpg",
-        "Type" : "Toddlers",
+        "Type" : "Children",
         "skills" : [
             "Cooking", "Playing", "Singing Nursery Rhymes"],
         "dominant-color": "#727888",
@@ -127,7 +127,7 @@
         "address" : "2 Micky street, badagry",
         "phone" : "+345-542-085-3432",
         "image" : "./images/teaching.jpg",
-        "Type" : "Toddlers",
+        "Type" : "Children",
         "skills" : [
             "Cooking", "Playing", "Nursery Rhymes"],
         "dominant-color": "#Fabfbf",
@@ -149,7 +149,7 @@
         "address" : "2 Micky street, badagry",
         "phone" : "+345-542-085-3432",
         "image" : "./images/dad-and-kid-phone.jpg",
-        "Type" : "Toddlers",
+        "Type" : "Children",
         "skills" : [
             "Cooking", "Playing", "Nursery Rhymes"],
         "dominant-color": "#fff",
@@ -160,7 +160,7 @@
         "address" : "2 Micky street, badagry",
         "phone" : "+345-542-085-3432",
         "image" : "./images/lady-2.jpg",
-        "Type" : "Toddlers",
+        "Type" : "Children",
         "skills" : [
             "Cooking", "Playing", "Nursery Rhymes"],
         "dominant-color": "#727888",
