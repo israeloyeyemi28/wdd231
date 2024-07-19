@@ -615,6 +615,42 @@ summary:hover {
   box-shadow: 0 0 50px #333;
   filter: drop-shadow(0 0 50px #333);
 }
+/* contact page */
+.hear{
+  text-align: center;
+  color: #fff;
+}
+.row {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.location-div,
+.email-div,
+.contact-div {
+  height: auto;
+  text-align: center;
+  background-color: rgb(38, 38, 87);
+  color: #fff;
+  padding: 20px 10px;
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+.location-div:hover,
+.contact-div:hover {
+  background-color: #393963;
+}
+.email-div,
+.email-div a {
+  background-color: #173768;
+  color: white;
+}
+.email-div:hover {
+  background-color: #545469;
+}
 /* tab screen */
 @media only screen and (min-width: 526px) and (max-width: 900px) {
   #myButton {
