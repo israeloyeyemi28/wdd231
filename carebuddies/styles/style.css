@@ -110,6 +110,9 @@ ul li {
 #sitter-hero{
   background-image: url(../images/jumping-on-plates.jpg);
 }
+#booking-hero{
+  background-image: url(../images/krakenimages-376KN_ISplE-unsplash.jpg);
+}
 .grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -401,6 +404,25 @@ footer a {
   color: #fff;
   padding: 0;
 }
+#results{
+  height: auto;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 1.3rem;
+} 
+#results p{
+  margin: 15px;
+  font-size: 1.5rem;
+}
+.body-2{
+  background-color: #807e96;
+}
+.second-main{
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  
+}
 .second-main a{
   text-decoration: underline;
 }
@@ -571,6 +593,28 @@ summary {
 summary:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
+/* BOOKING SITE */
+#hero-emoji::after{
+  content: "\1F9B8";
+}
+.form-img{
+  margin: 1rem;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.form-img img{
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border: solid red 2px;
+}
+.form-img img:hover {
+  box-shadow: 0 0 50px #333;
+  filter: drop-shadow(0 0 50px #333);
+}
 /* tab screen */
 @media only screen and (min-width: 526px) and (max-width: 900px) {
   #myButton {
@@ -616,7 +660,7 @@ summary:hover {
   }
   .hero-div{
     height: auto;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 .weather-icon {
   margin-top: 30px;
@@ -647,15 +691,19 @@ summary:hover {
     grid-template-columns: 1fr;
     padding: 2rem;
   }
-  form {
-    box-sizing: border-box;
-    text-align: center;
-    margin-left: 2rem;
-  }
-  textarea{
+  .under{
+    text-decoration: underline;
     padding: 20px;
-    margin-left: 30px;
   }
+  .form-img{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.choose-txt{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
   .image-div{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -674,12 +722,8 @@ summary:hover {
 }
   .activity-img img:hover {box-shadow: 0 0 50px #333;}
 }
-.choose-txt {
-  display: flex;
-  text-transform: none;
-  align-items: center;
-  flex-direction: column;
-  list-style-type: disc;
+.field{
+  margin: 10px 20px;
 }
 /* Largest screen pc */
 @media only screen and (min-width: 900px) {
@@ -688,6 +732,7 @@ summary:hover {
   }
   h1 {
     font-size: 2rem;
+    margin: 1rem;
   }
   a {
     font-size: 1rem;
@@ -725,8 +770,8 @@ summary:hover {
     padding-bottom: 20px;
   }
   .hero-div{
-      height: 75vh;
-      font-size: 2.5rem;
+    height: 75vh;
+    font-size: 2.5rem;
   }
   .weather-icon {
   margin-top: 10px;
@@ -756,11 +801,6 @@ summary:hover {
     display: grid;
     grid-template-columns: 1fr;
     padding: 2rem;
-  }
-  form {
-    box-sizing: border-box;
-    text-align: center;
-    margin-left: 2rem;
   }
   textarea{
     padding: 20px;
@@ -829,6 +869,15 @@ flex-direction: column;
   max-width: 400px;
   height: 100%;
   
+}
+.form-img{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.choose-txt{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 }

@@ -1,0 +1,82 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  max-width: 500px;
+  margin: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0 1rem 1rem 1rem;
+  border: 1px solid black;
+}
+form label {
+  display: block;
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+/* Textarea */
+textarea {
+  resize: none;
+  padding: 1rem;
+  width: auto;
+  /* margin: 2rem; */
+  height: 300px;
+  border-radius: 10px;
+}
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+select {
+  padding: 0.5em;
+  background-color: #eee;
+  display: block;
+  border: solid 1px #999;
+  border-radius: 6px;
+  padding: 0.75rem;
+  color: #555;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  border-left-width: 5px;
+  border-left-color: #555;
+}
+input[type="submit"] {
+  display: flex;
+  border: 1px solid;
+  background-color: blue;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem;
+  margin: 4.5rem 0 1rem 0;
+  font-size: 1.2rem;
+  appearance: none;
+  max-width: 400px;
+}
+fieldset {
+  margin: 2rem 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem 2%;
+}
+legend {
+  color: #445ba9;
+  /* padding: 0 0.5rem; */
+}
+input:required, select:required {
+  border-left-color: #d70000;
+}
+input:focus, select:focus {
+  border-color: black;
+  outline: none;
+}
+input:required:valid, select:valid {
+  border-left-color: green;
+}
+.optional {
+  font-weight: 600;
+  font-size: 0.7rem;
+}

@@ -85,7 +85,7 @@
         "image" : "./images/angela.jpg",
         "Type" : "Toddlers",
         "skills" : [
-            "Cooking", "Playing", "Singing Lulabys"],
+            "Cooking", "Playing","Number Games","Nursery Rhymes"],
         "dominant-color": "#Fafafa",
         "color": "#000"
     },
@@ -96,7 +96,7 @@
         "image" : "./images/sarah-lucy.jpg",
         "Type" : "Toddlers",
         "skills" : [
-            "Cooking", "Playing", "Singing Lulabys"],
+            "Cooking", "Playing", "Singing Nursery Rhymes"],
         "dominant-color": "#727888",
         "color": "#000"
     },
@@ -107,8 +107,63 @@
         "image" : "./images/anna.jpg",
         "Type" : "Toddlers",
         "skills" : [
-            "Cooking", "Playing", "Singing Lulabys"],
+            "Cooking", "Playing", "Nursery Rhymes"],
         "dominant-color": "#Fabfbf",
+        "color": "#000"
+    },
+     {
+        "name" : "Kelly Richard",
+        "address" : "2 Micky street, badagry",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/lady-1.jpg",
+        "Type" : "Infants",
+        "skills" : [
+            "Cooking", "Playing", "Nursery Rhymes"],
+        "dominant-color": "#BFEEFD",
+        "color": "#000"
+    },
+     {
+        "name" : "Samanta  Josepson",
+        "address" : "2 Micky street, badagry",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/teaching.jpg",
+        "Type" : "Toddlers",
+        "skills" : [
+            "Cooking", "Playing", "Nursery Rhymes"],
+        "dominant-color": "#Fabfbf",
+        "color": "#000"
+    },
+     {
+        "name" : "Joshua Andrew",
+        "address" : "2 McDonalds street, badagry",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/baby-carrier.jpg",
+        "Type" : "Toddlers",
+        "skills" : [
+            "Cooking", "Playing", "Nursery Rhymes"],
+        "dominant-color": "#fff",
+        "color": "#000"
+    },
+     {
+        "name" : "Blake Connor",
+        "address" : "2 Micky street, badagry",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/dad-and-kid-phone.jpg",
+        "Type" : "Toddlers",
+        "skills" : [
+            "Cooking", "Playing", "Nursery Rhymes"],
+        "dominant-color": "#fff",
+        "color": "#000"
+    },
+     {
+        "name" : "Daniella Smith",
+        "address" : "2 Micky street, badagry",
+        "phone" : "+345-542-085-3432",
+        "image" : "./images/lady-2.jpg",
+        "Type" : "Toddlers",
+        "skills" : [
+            "Cooking", "Playing", "Nursery Rhymes"],
+        "dominant-color": "#727888",
         "color": "#000"
     }
     ]
