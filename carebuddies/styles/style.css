@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap');
 :root{
-    --paragraph-font: font-family: "Merriweather", serif;
-    --heading-font: font-family: "Poppins", sans-serif;
+    --paragraph-font: font-family: ;
+    --heading-font: font-family: ;
     --border-radius: 15px;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--paragraph-font);
+  font-family: "Merriweather", serif;
 }
 header, footer {
   background-color: #062349;
-  font-family: var(--heading-font);
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
+h1, h2{
+font-family: "Poppins", sans-serif;
 }
 .head-div {
   display: flex;
